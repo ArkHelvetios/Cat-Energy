@@ -1,0 +1,28 @@
+.page-header {
+  background-color: $white;
+  border-bottom: 1px solid $grey-200;
+  padding-top: 12px;
+  padding-bottom: 22px;
+}
+
+.page-header__wrapper {
+  display: flex;
+  position: relative;
+}
+
+.page-header__logo {
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 38px;
+    background-image: url("../../img/logo/logo-mobile-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    margin-right: 15px;
+  }
+}
+
