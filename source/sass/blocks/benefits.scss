@@ -26,7 +26,7 @@
   &::before {
     content: "";
     display: block;
-    width: 60px;
+    min-width: 60px;
     height: 60px;
     background-color: $green-basic;
     margin-right: 20px;

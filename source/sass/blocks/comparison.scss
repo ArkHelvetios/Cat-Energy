@@ -1,0 +1,40 @@
+.comparison__images {
+  margin-bottom: 10px;
+}
+
+.comparison__control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.comparison__button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+}
+
+.comparison__bar {
+  flex-grow: 1;
+  height: 14px;
+  background-color: $white;
+  border: 1px solid $grey-300;
+  border-radius: 6px;
+  padding: 3px 6px;
+}
+
+.comparison__toggle {
+  width: 50%;
+  height: 6px;
+  background-color: $green-basic;
+  border-radius: 6px;
+}
