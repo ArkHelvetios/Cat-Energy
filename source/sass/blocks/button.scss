@@ -1,0 +1,18 @@
+.button {
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+  text-transform: uppercase;
+  background-color: $green-basic;
+  padding: 10px;
+
+  &:hover,
+  &:active {
+    background-color: $green-dark;
+  }
+
+  &:active {
+    color: rgba($white, 30%);
+  }
+}
