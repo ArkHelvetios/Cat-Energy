@@ -1,5 +1,7 @@
 .contacts {
-  background-color: $white;
+  &--index {
+    background-color: $white;
+  }
 }
 
 .contacts__panel {

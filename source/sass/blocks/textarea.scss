@@ -1,0 +1,11 @@
+.textarea {
+  display: block;
+  width: 100%;
+  min-height: 150px;
+  color: $grey-500;
+  font-family: inherit;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: 1px solid $grey-200;
+  padding: 10px 15px;
+}

@@ -1,0 +1,38 @@
+.form-consult__fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form-consult__fieldset:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.form-consult__legend {
+  margin-bottom: 35px;
+  padding: 0;
+}
+
+.form-consult__field:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.form-consult__radio:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.form-consult__checkbox:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.form-consult__button {
+  width: 100%;
+  font-family: inherit;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.form-consult__footnote {
+  font-family: $font-family-secondary;
+  text-align: center;
+}

@@ -1,6 +1,4 @@
 .intro {
-  display: flex;
-  flex-direction: column;
   position: relative;
 
   &--index {
@@ -41,11 +39,15 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 30px;
+
+  &:last-child {
+    margin: 0;
+  }
 }
 
 .intro__image {
-  display: block;
-  align-self: center;
+  display: inline-block;
+  text-align: center;
   width: 280px;
   height: 270px;
   margin-bottom: 5px;
