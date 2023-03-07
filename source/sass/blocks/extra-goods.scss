@@ -1,0 +1,56 @@
+.extra-goods__title {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.extra-goods__list {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.extra-goods__item {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding-top: 13px;
+  padding-bottom: 19px;
+}
+
+.extra-goods__name {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: start;
+  grid-column: 1/-1;
+  margin-bottom: 13px;
+}
+
+.extra-goods__amount,
+.extra-goods__price {
+  font-family: $font-family-secondary;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.extra-goods__price {
+  text-align: end;
+}
+
+.extra-goods__button {
+  grid-column: 1/-1;
+  margin-top: 15px;
+}
+
+.extra-goods__promo-cta {
+  min-height: 289px;
+  width: 100%;
+  font-family: $font-family-secondary;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: $white;
+  background-color: $green-basic;
+  margin: 0;
+  padding: 60px;
+}

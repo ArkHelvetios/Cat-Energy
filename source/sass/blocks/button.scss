@@ -4,6 +4,7 @@
   line-height: 20px;
   color: $white;
   text-transform: uppercase;
+  text-align: center;
   background-color: $green-basic;
   padding: 10px;
   cursor: pointer;
@@ -15,5 +16,19 @@
 
   &:active {
     color: rgba($white, 30%);
+  }
+
+  &--secondary {
+    color: $grey-500;
+    background-color: $grey-100;
+
+    &:hover,
+    &:active {
+    background-color: $grey-200;
+
+    &:active {
+      color: rgba($grey-500, 30%);
+    }
+  }
   }
 }

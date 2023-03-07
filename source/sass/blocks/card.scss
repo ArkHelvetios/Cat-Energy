@@ -1,0 +1,46 @@
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "img title"
+    "img info"
+    "btn btn";
+
+  &--load-more {
+    display: block;
+    text-align: center;
+  }
+}
+
+.card__title {
+  grid-area: title;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: inherit;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 13px;
+}
+
+.card__image {
+  grid-area: img;
+}
+
+.card__info {
+  grid-area: info;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: $font-family-secondary;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.card__parameter-value {
+  margin: 0;
+  text-align: end;
+}
+
+.card__button {
+  grid-area: btn;
+  margin-top: 13px;
+}
