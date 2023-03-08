@@ -14,5 +14,11 @@ $color-error: #FF8282;
 
 // Fonts
 
-$font-family-primary: "Oswald", "Arial", sans-serif;
-$font-family-secondary: "Arial", sans-serif;
+$font-family-primary: ("Oswald", "Arial", sans-serif);
+$font-family-secondary: ("Arial", sans-serif);
+
+
+// Viewports
+
+$tablet: 768px;
+$desktop: 1280px;

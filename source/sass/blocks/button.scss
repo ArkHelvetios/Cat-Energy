@@ -1,12 +1,8 @@
 .button {
-  display: block;
-  font-size: 16px;
-  line-height: 20px;
   color: $white;
   text-transform: uppercase;
   text-align: center;
   background-color: $green-basic;
-  padding: 10px;
   cursor: pointer;
 
   &:hover,

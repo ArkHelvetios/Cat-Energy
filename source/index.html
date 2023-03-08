@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cat Energy - Функциональное питание для котов</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -12,8 +13,11 @@
         <a class="page-header__logo">
           <img class="page-header__logo-image" src="img/logo/logo-text-only.svg" alt="Логотип Cat Energy" width="101" height="18">
         </a>
-        <nav class="main-nav">
-          <ul class="main-nav__list">
+        <nav class="page-header__main-nav main-nav main-nav--index">
+          <button class="main-nav__toggle burger-menu" type="button" aria-label="Открыть меню">
+            <span class="burger-menu__icon" aria-hidden="true"></span>
+          </button>
+          <ul class="main-nav__list main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link main-nav__link--current">Главная</a>
             </li>
@@ -24,18 +28,17 @@
               <a href="form.html" class="main-nav__link">Подбор программы</a>
             </li>
           </ul>
-          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
         </nav>
       </div>
     </header>
 
     <main class="page-main">
 
-      <header class="page-main__intro intro intro--index wrapper">
-        <h1 class="intro__title title">Функциональное питание для котов</h1>
+      <header class="page-main__intro intro wrapper">
+        <h1 class="intro__title title">Функциональное<br> питание для котов</h1>
         <p class="intro__description">Занялся собой? Займись котом!</p>
         <img class="intro__image" src="img/index-intro-can-m.png" alt="Порция Cat-Energy PRO 500г с Курицей" width="280" height="270">
-        <a href="#" class="intro__button button" >Подобрать программу</a>
+        <a href="#" class="intro__button button">Подобрать программу</a>
       </header>
 
       <section class="page-main__program-types program-types wrapper">

@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cat Energy - Функциональное питание для котов</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -12,30 +13,32 @@
         <a href="index.html" class="page-header__logo">
           <img class="page-header__logo-image" src="img/logo/logo-text-only.svg" alt="Логотип Cat Energy" width="101" height="18">
         </a>
-        <nav class="main-nav">
+        <nav class="page-header__main-nav main-nav">
+          <button class="main-nav__toggle burger-menu" type="button" aria-label="Открыть меню">
+            <span class="burger-menu__icon" aria-hidden="true"></span>
+          </button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="index.html" class="main-nav__link main-nav__link--current">Главная</a>
+              <a href="index.html" class="main-nav__link">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link">Каталог продукции</a>
+              <a class="main-nav__link main-nav__link--current">Каталог продукции</a>
             </li>
             <li class="main-nav__item">
               <a href="form.html" class="main-nav__link">Подбор программы</a>
             </li>
           </ul>
-          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
         </nav>
       </div>
     </header>
 
-    <main class="page-main">
+    <main class="page-main wrapper">
 
-      <header class="page-main__intro intro wrapper">
-        <h1 class="intro__title title">Каталог продукции</h1>
+      <header class="page-main__header">
+        <h1 class="page-main__title title">Каталог продукции</h1>
       </header>
 
-      <section class="page-main__catalog catalog wrapper">
+      <section class="page-main__catalog catalog">
         <h2 class="visually-hidden">Список товаров</h2>
         <ul class="catalog__list">
           <li class="catalog__item card">
@@ -137,7 +140,7 @@
         </ul>
       </section>
 
-      <section class="page-main__extra-goods extra-goods wrapper">
+      <section class="page-main__extra-goods extra-goods">
         <h2 class="extra-goods__title section-title">Дополнительные товары</h2>
         <table class="extra-goods__list">
           <tr class="extra-goods__item">
