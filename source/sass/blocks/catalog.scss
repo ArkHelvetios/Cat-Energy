@@ -1,7 +1,31 @@
 .catalog__list {
   display: grid;
-  gap: 20px;
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-left: -20px;
+  margin-right: -20px;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+  }
+}
+
+.catalog__item {
+  @media (min-width: $tablet) {
+    margin-top: 70px;
+  }
+}
+
+.catalog__image {
+  @media (min-width: $tablet) {
+    margin-top: -70px;
+  }
 }

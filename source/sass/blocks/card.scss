@@ -5,10 +5,29 @@
     "img title"
     "img info"
     "btn btn";
+  border-top: 1px solid $grey-200;
+  padding: 20px;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    background-color: $grey-100;
+    border: none;
+    padding: 0 38px 40px 38px;
+  }
 
   &--load-more {
-    display: block;
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    border-bottom: 1px solid $grey-200;
+
+    @media (min-width: $tablet) {
+      justify-content: end;
+      background-color: $white;
+      border: 1px solid $grey-200;
+    }
   }
 }
 
@@ -19,11 +38,32 @@
   font-weight: inherit;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 8px;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+.card__description {
+  font-family: $font-family-secondary;
+  font-size: 12px;
+  line-height: 16px;
+  color: $grey-500;
+  margin: 0;
 }
 
 .card__image {
   grid-area: img;
+
+  @media (min-width: $tablet) {
+    order: -1;
+    align-self: center;
+    margin-bottom: 34px;
+  }
 }
 
 .card__info {
@@ -33,6 +73,20 @@
   font-family: $font-family-secondary;
   font-size: 12px;
   line-height: 16px;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+}
+
+.card__parameter,
+.card__parameter-value {
+  @media (min-width: $tablet) {
+    padding-top: 7px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid $grey-300;
+  }
 }
 
 .card__parameter-value {
@@ -42,5 +96,8 @@
 
 .card__button {
   grid-area: btn;
+  font-size: 16px;
+  line-height: 20px;
   margin-top: 13px;
+  padding: 10px;
 }
