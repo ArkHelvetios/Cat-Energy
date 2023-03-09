@@ -1,0 +1,109 @@
+.results {
+  display: grid;
+  gap: 20px;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: 1fr max-content;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.results__list {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 32px;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: -12px;
+
+  @media (min-width: $tablet) {
+    column-gap: 42px;
+    justify-content: start;
+  }
+}
+
+.results__item {
+  display: flex;
+  flex-direction: column;
+  min-width: 124px;
+
+  @media (min-width: $tablet) {
+    min-width: 162px;
+  }
+}
+
+.results__value {
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid $grey-300;
+  border-radius: 3px;
+  padding: 20px;
+  padding-top: 15px;
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.results__description {
+  position: relative;
+  bottom: 12px;
+  width: min-content;
+  font-family: $font-family-secondary;
+  font-size: 12px;
+  line-height: 12px;
+  color: $grey-500;
+  text-align: center;
+  align-self: center;
+  background-color: $grey-200;
+  margin: 0;
+  padding: 8px;
+  padding-top: 5px;
+
+  @media (min-width: $tablet) {
+    width: max-content;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop) {
+    background-color: $grey-200;
+  }
+}
+
+.results__total {
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    text-align: left;
+  }
+}
+
+.results__total-price {
+  @media (min-width: $tablet) {
+    display: block;
+    margin-top: 5px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 0;
+    margin-left: 25px;
+  }
+}

@@ -1,15 +1,71 @@
 .example {
+  position: relative;
   background-color: $grey-200;
+  z-index: 0;
+
+  &::after {
+    content: "";
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: $grey-200;
+    z-index: -1;
+  }
+
+  @media (min-width: $tablet) {
+    background-color: $white;
+    border-top: 1px solid $grey-200;
+
+    &::after {
+      display: block;
+      height: 460px;
+      bottom: 0;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    border: none;
+
+    &::after {
+      height: auto;
+      top: 194px;
+    }
+  }
 }
 
 .example__wrapper {
+  display: grid;
+  gap: 40px;
   padding-top: 25px;
   padding-bottom: 25px;
+
+  @media (min-width: $tablet) {
+    gap: 60px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    padding-top: 0;
+    padding-bottom: 75px;
+  }
+}
+
+.example__info {
+  @media (min-width: $desktop) {
+
+  }
 }
 
 .example__title {
   margin: 0;
   margin-bottom: 33px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 63px;
+  }
 }
 
 .example__description {
@@ -17,51 +73,4 @@
   color: $grey-500;
   margin: 0;
   margin-bottom: 25px;
-}
-
-.example__stats {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 32px;
-  margin: 0;
-  margin-bottom: 10px;
-}
-
-.example__stats-item {
-  display: flex;
-  flex-direction: column;
-}
-
-.example__stats-value {
-  font-size: 24px;
-  line-height: 24px;
-  text-align: center;
-  text-transform: uppercase;
-  border: 1px solid $grey-300;
-  border-radius: 3px;
-  padding: 20px;
-  padding-top: 15px;
-}
-
-.example__stats-description {
-  position: relative;
-  bottom: 12px;
-  width: min-content;
-  font-family: $font-family-secondary;
-  font-size: 12px;
-  line-height: 12px;
-  color: $grey-500;
-  text-align: center;
-  align-self: center;
-  background-color: $grey-200;
-  margin: 0;
-  padding: 8px;
-  padding-top: 5px;
-}
-
-.example__price {
-  text-align: center;
-  text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 40px;
 }
