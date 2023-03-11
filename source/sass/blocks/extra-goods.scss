@@ -3,17 +3,52 @@
   margin-bottom: 30px;
 }
 
+.extra-goods__inner {
+  display: grid;
+  row-gap: 40px;
+
+  @media (min-width: $tablet) {
+    row-gap: 70px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 1fr 245px;
+    column-gap: 80px;
+  }
+}
+
 .extra-goods__list {
   border-collapse: collapse;
   width: 100%;
-  margin-bottom: 40px;
 }
 
 .extra-goods__item {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  gap: 15px;
   padding-top: 13px;
   padding-bottom: 19px;
+  border-top: 1px solid $grey-300;
+
+  &:last-child {
+    border-bottom: 1px solid $grey-300;
+  }
+
+  @media (min-width: $tablet) {
+    grid-template-columns: 50% 1fr 90px;
+    gap: 25px 20px;
+    border-left: 1px solid $grey-300;
+    border-right: 1px solid $grey-300;
+    padding: 26px 38px 28px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 1fr 225px 70px 245px;
+    align-items: center;
+    border-left: none;
+    border-right: none;
+    padding: 15px 0 17px;
+  }
 }
 
 .extra-goods__name {
@@ -23,7 +58,16 @@
   text-transform: uppercase;
   text-align: start;
   grid-column: 1/-1;
-  margin-bottom: 13px;
+
+  @media (min-width: $tablet) {
+    grid-column: 1/2;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+  }
 }
 
 .extra-goods__amount,
@@ -31,15 +75,42 @@
   font-family: $font-family-secondary;
   font-size: 14px;
   line-height: 14px;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.extra-goods__amount {
+  @media (min-width: $tablet) {
+    text-align: end;
+  }
+
+  @media (min-width: $desktop) {
+    text-align: start;
+  }
 }
 
 .extra-goods__price {
   text-align: end;
+
+  @media (min-width: $desktop) {
+    text-align: start;
+  }
+}
+
+.extra-goods__action {
+  grid-column: 1/-1;
+
+  @media (min-width: $desktop) {
+    grid-column: auto;
+  }
 }
 
 .extra-goods__button {
-  grid-column: 1/-1;
-  margin-top: 15px;
+  display: block;
+  line-height: 20px;
 }
 
 .extra-goods__promo-cta {
