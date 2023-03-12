@@ -1,8 +1,8 @@
-.form-consult__pet-program-wrapper,
-.form-consult__owner-info-wrapper {
+.form-consult__pet-program-container,
+.form-consult__owner-info-container {
   display: grid;
 
-  @media (min-width: $desktop) {
+  @media #{$desktop} {
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
   }
@@ -14,7 +14,7 @@
   margin: 0;
   margin-bottom: 25px;
 
-  @media (min-width: $tablet) {
+  @media #{$tablet} {
     margin-bottom: 70px;
   }
 
@@ -24,7 +24,7 @@
     margin-left: -20px;
     border: 1px solid $grey-200;
 
-    @media (min-width: $tablet) {
+    @media #{$tablet} {
       margin-right: 0;
       margin-left: 0;
       padding: 25px 28px;
@@ -36,7 +36,7 @@
   margin-bottom: 35px;
   padding: 0;
 
-  @media (min-width: $tablet) {
+  @media #{$tablet} {
     margin-bottom: 55px;
   }
 }
@@ -44,7 +44,7 @@
 .form-consult__field {
   margin-bottom: 14px;
 
-  @media (min-width: $tablet) {
+  @media #{$tablet} {
     margin-bottom: 20px;
   }
 
@@ -53,7 +53,7 @@
   }
 
   &--email {
-    @media (min-width: $desktop) {
+    @media #{$desktop} {
       margin-bottom: 0;
     }
   }
@@ -67,21 +67,21 @@
   display: grid;
   gap: 13px;
 
-  @media (min-width: $tablet) {
+  @media #{$tablet} {
     grid-template-columns: 1fr 1fr;
     gap: 32px 80px;
   }
 
-  @media (min-width: $desktop) {
+  @media #{$desktop} {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
-.form-consult__submit-wrapper {
+.form-consult__submit-container {
   display: grid;
   gap: 20px;
 
-  @media (min-width: $tablet) {
+  @media #{$tablet} {
     grid-template-columns: 1fr 1fr;
     gap: 80px;
     align-items: center;
@@ -89,17 +89,11 @@
 }
 
 .form-consult__button {
-  width: 100%;
   font-family: inherit;
-  font-size: 16px;
-  line-height: 20px;
-  border: none;
-  padding: 10px 15px;
 
-  @media (min-width: $tablet) {
+  @media #{$tablet} {
     font-size: 20px;
-    line-height: 26px;
-    padding: 13px 24px;
+    padding: 16px;
   }
 }
 
@@ -110,7 +104,7 @@
   text-align: center;
   margin: 0;
 
-  @media (min-width: $tablet) {
+  @media #{$tablet} {
     font-size: 16px;
     text-align: left;
   }

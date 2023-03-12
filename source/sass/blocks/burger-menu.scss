@@ -8,7 +8,7 @@
   cursor: pointer;
   transition: all 500ms ease-in-out;
 
-  @media (min-width: $tablet) {
+  @media #{$tablet} {
     display: none;
   }
 }

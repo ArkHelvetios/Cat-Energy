@@ -20,7 +20,7 @@
     margin-right: 16px;
   }
 
-  @media (min-width: $tablet) {
+  @media #{$tablet} {
     font-size: 20px;
     line-height: 30px;
 

@@ -17,8 +17,20 @@ $color-error: #FF8282;
 $font-family-primary: ("Oswald", "Arial", sans-serif);
 $font-family-secondary: ("Arial", sans-serif);
 
+// Container
 
-// Viewports
+$width-mobile: 320px;
+$width-tablet: 768px;
+$width-desktop: 1280px;
 
-$tablet: 768px;
-$desktop: 1280px;
+$tablet: "(min-width: #{$width-tablet})";
+$desktop: "(min-width: #{$width-desktop})";
+
+:root {
+  --container-padding-mobile: 20px;
+  --container-padding: 30px;
+
+  --container-width-mobile: (#{$width-mobile} - var(--container-padding-mobile) * 2);
+  --container-width-tablet: (#{$width-tablet} - var(--container-padding) * 2);
+  --container-width-desktop: (#{$width-desktop} - var(--container-padding) * 2);
+}

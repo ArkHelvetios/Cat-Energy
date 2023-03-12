@@ -36,7 +36,7 @@
     padding: 8px;
   }
 
-  @media (min-width: $tablet) {
+  @media #{$tablet} {
     font-size: 20px;
     line-height: 30px;
     padding-left: 60px;

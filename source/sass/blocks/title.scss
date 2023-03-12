@@ -3,7 +3,7 @@
   line-height: 36px;
   font-weight: inherit;
 
-  @media (min-width: $tablet) {
+  @media #{$tablet} {
     font-size: 60px;
     line-height: 60px;
   }

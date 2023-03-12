@@ -7,11 +7,11 @@
   display: grid;
   row-gap: 40px;
 
-  @media (min-width: $tablet) {
+  @media #{$tablet} {
     row-gap: 70px;
   }
 
-  @media (min-width: $desktop) {
+  @media #{$desktop} {
     grid-template-columns: 1fr 245px;
     column-gap: 80px;
   }
@@ -34,7 +34,7 @@
     border-bottom: 1px solid $grey-300;
   }
 
-  @media (min-width: $tablet) {
+  @media #{$tablet} {
     grid-template-columns: 50% 1fr 90px;
     gap: 25px 20px;
     border-left: 1px solid $grey-300;
@@ -42,7 +42,7 @@
     padding: 26px 38px 28px;
   }
 
-  @media (min-width: $desktop) {
+  @media #{$desktop} {
     grid-template-columns: 1fr 225px 70px 245px;
     align-items: center;
     border-left: none;
@@ -59,13 +59,13 @@
   text-align: start;
   grid-column: 1/-1;
 
-  @media (min-width: $tablet) {
+  @media #{$tablet} {
     grid-column: 1/2;
     font-size: 20px;
     line-height: 20px;
   }
 
-  @media (min-width: $desktop) {
+  @media #{$desktop} {
     margin: 0;
   }
 }
@@ -76,18 +76,18 @@
   font-size: 14px;
   line-height: 14px;
 
-  @media (min-width: $tablet) {
+  @media #{$tablet} {
     font-size: 16px;
     line-height: 20px;
   }
 }
 
 .extra-goods__amount {
-  @media (min-width: $tablet) {
+  @media #{$tablet} {
     text-align: end;
   }
 
-  @media (min-width: $desktop) {
+  @media #{$desktop} {
     text-align: start;
   }
 }
@@ -95,7 +95,7 @@
 .extra-goods__price {
   text-align: end;
 
-  @media (min-width: $desktop) {
+  @media #{$desktop} {
     text-align: start;
   }
 }
@@ -103,14 +103,9 @@
 .extra-goods__action {
   grid-column: 1/-1;
 
-  @media (min-width: $desktop) {
+  @media #{$desktop} {
     grid-column: auto;
   }
-}
-
-.extra-goods__button {
-  display: block;
-  line-height: 20px;
 }
 
 .extra-goods__promo-cta {

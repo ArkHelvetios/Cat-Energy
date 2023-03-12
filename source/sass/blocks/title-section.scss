@@ -1,0 +1,52 @@
+.title-section {
+  display: inline-block;
+  position: relative;
+  max-width: 70%;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: inherit;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+  }
+
+  &::before {
+    top: 0.65em;
+    left: calc(var(--container-padding-mobile) * -1);
+    height: 2px;
+    width: 100vw;
+    background-color: $green-basic;
+  }
+
+  &::after {
+    top: 0;
+    left: -20px;
+    right: -20px;
+    height: 1em;
+    background-color: $white;
+  }
+
+  @media #{$tablet} {
+    max-width: none;
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      left: calc(var(--container-padding) * -1);
+    }
+
+    &::after {
+      left: -40px;
+      right: -40px;
+    }
+  }
+
+  @media #{$desktop} {
+    &::before {
+      left: calc((50vw - var(--container-width-desktop) / 2) * -1)
+    }
+  }
+}

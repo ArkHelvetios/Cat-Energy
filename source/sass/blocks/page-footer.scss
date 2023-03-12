@@ -8,7 +8,7 @@
   padding-top: 30px;
   padding-bottom: 20px;
 
-  @media (min-width: $tablet) {
+  @media #{$tablet} {
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     padding-top: 55px;
@@ -21,7 +21,7 @@
   width: 128px;
   height: 24px;
 
-  @media (min-width: $tablet) {
+  @media #{$tablet} {
     justify-self: start;
   }
 }
@@ -31,7 +31,7 @@
   border-bottom: 1px solid $grey-300;
   padding: 20px;
 
-  @media (min-width: $tablet) {
+  @media #{$tablet} {
     border: none;
     padding: 0;
   }

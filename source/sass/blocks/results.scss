@@ -2,12 +2,12 @@
   display: grid;
   gap: 20px;
 
-  @media (min-width: $tablet) {
+  @media #{$tablet} {
     grid-template-columns: 1fr max-content;
     align-items: center;
   }
 
-  @media (min-width: $desktop) {
+  @media #{$desktop} {
     grid-template-columns: 1fr;
   }
 }
@@ -20,7 +20,7 @@
   margin: 0;
   margin-bottom: -12px;
 
-  @media (min-width: $tablet) {
+  @media #{$tablet} {
     column-gap: 42px;
     justify-content: start;
   }
@@ -31,7 +31,7 @@
   flex-direction: column;
   min-width: 124px;
 
-  @media (min-width: $tablet) {
+  @media #{$tablet} {
     min-width: 162px;
   }
 }
@@ -46,7 +46,7 @@
   padding: 20px;
   padding-top: 15px;
 
-  @media (min-width: $tablet) {
+  @media #{$tablet} {
     font-size: 30px;
     line-height: 37px;
   }
@@ -67,14 +67,14 @@
   padding: 8px;
   padding-top: 5px;
 
-  @media (min-width: $tablet) {
+  @media #{$tablet} {
     width: max-content;
     font-size: 14px;
     line-height: 14px;
     background-color: $white;
   }
 
-  @media (min-width: $desktop) {
+  @media #{$desktop} {
     background-color: $grey-200;
   }
 }
@@ -85,24 +85,24 @@
   text-transform: uppercase;
   margin: 0;
 
-  @media (min-width: $tablet) {
+  @media #{$tablet} {
     font-size: 20px;
     text-align: right;
   }
 
-  @media (min-width: $desktop) {
+  @media #{$desktop} {
     display: flex;
     text-align: left;
   }
 }
 
 .results__total-price {
-  @media (min-width: $tablet) {
+  @media #{$tablet} {
     display: block;
     margin-top: 5px;
   }
 
-  @media (min-width: $desktop) {
+  @media #{$desktop} {
     margin-top: 0;
     margin-left: 25px;
   }

@@ -11,12 +11,12 @@
   padding: 0;
   counter-reset: benefit-num;
 
-  @media (min-width: $tablet) {
+  @media #{$tablet} {
     grid-template-columns: 1fr 1fr;
     gap: 40px 80px;
   }
 
-  @media (min-width: $desktop) {
+  @media #{$desktop} {
     grid-template-columns: repeat(4, 1fr);
   }
 
@@ -50,7 +50,7 @@
     z-index: -1;
   }
 
-  @media (min-width: $tablet) {
+  @media #{$tablet} {
     flex-direction: column;
     justify-content: center;
     width: 230px;

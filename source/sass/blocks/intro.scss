@@ -1,8 +1,5 @@
 .intro {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   color: $white;
   text-align: center;
 
@@ -29,8 +26,7 @@
     background-color: rgba($green-basic, 85%);
   }
 
-  @media (min-width: $tablet) {
-    align-items: start;
+  @media #{$tablet} {
     color: $black;
     text-align: left;
 
@@ -63,7 +59,7 @@
   margin: 0;
   margin-bottom: 25px;
 
-  @media (min-width: $tablet) {
+  @media #{$tablet} {
     margin-bottom: 40px;
     margin-left: 80px;
   }
@@ -80,7 +76,7 @@
     margin: 0;
   }
 
-  @media (min-width: $tablet) {
+  @media #{$tablet} {
     font-size: 20px;
     line-height: 20px;
     margin-bottom: 50px;
@@ -93,20 +89,19 @@
   height: 270px;
   margin-bottom: 5px;
 
-  @media (min-width: $tablet) {
+  @media #{$tablet} {
     order: 1;
     z-index: -1;
   }
 }
 
 .intro__button {
-  align-self: stretch;
-  padding: 10px;
-  @media (min-width: $tablet) {
-    align-self: start;
+  font-size: 14px;
+  line-height: 18px;
+
+  @media #{$tablet} {
     font-size: 20px;
     line-height: 20px;
-    margin-left: 80px;
-    padding: 14px 26px;
+    padding: 16px;
   }
 }

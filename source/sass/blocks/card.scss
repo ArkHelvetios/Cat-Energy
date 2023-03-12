@@ -9,7 +9,7 @@
   padding: 20px;
   padding-bottom: 25px;
 
-  @media (min-width: $tablet) {
+  @media #{$tablet} {
     display: flex;
     flex-direction: column;
     background-color: $grey-100;
@@ -23,7 +23,7 @@
     text-align: center;
     border-bottom: 1px solid $grey-200;
 
-    @media (min-width: $tablet) {
+    @media #{$tablet} {
       justify-content: end;
       background-color: $white;
       border: 1px solid $grey-200;
@@ -40,7 +40,7 @@
   margin: 0;
   margin-bottom: 8px;
 
-  @media (min-width: $tablet) {
+  @media #{$tablet} {
     font-size: 20px;
     line-height: 24px;
     text-align: center;
@@ -59,7 +59,7 @@
 .card__image {
   grid-area: img;
 
-  @media (min-width: $tablet) {
+  @media #{$tablet} {
     order: -1;
     align-self: center;
     margin-bottom: 34px;
@@ -74,7 +74,7 @@
   font-size: 12px;
   line-height: 16px;
 
-  @media (min-width: $tablet) {
+  @media #{$tablet} {
     font-size: 16px;
     margin-bottom: 30px;
   }
@@ -82,7 +82,7 @@
 
 .card__parameter,
 .card__parameter-value {
-  @media (min-width: $tablet) {
+  @media #{$tablet} {
     padding-top: 7px;
     padding-bottom: 9px;
     border-bottom: 1px solid $grey-300;
@@ -95,7 +95,5 @@
 }
 
 .card__button {
-  grid-area: btn;
-  font-size: 16px;
-  line-height: 20px;
+  grid-column: 1/-1;
 }

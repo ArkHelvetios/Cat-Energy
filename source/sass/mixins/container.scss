@@ -1,0 +1,14 @@
+.container {
+  min-width: $width-mobile;
+  max-width: $width-desktop;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-padding-mobile);
+  padding-right: var(--container-padding-mobile);
+
+  @media #{$tablet} {
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+  }
+}

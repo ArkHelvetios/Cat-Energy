@@ -8,7 +8,7 @@
   padding: 0;
   transform: translateY(calc(-100% - 70px));
 
-  @media (min-width: $tablet) {
+  @media #{$tablet} {
     position: static;
     display: flex;
     flex-wrap: wrap;
@@ -25,7 +25,7 @@
   background-color: $white;
   border-bottom: 1px solid $grey-200;
 
-  @media (min-width: $tablet) {
+  @media #{$tablet} {
     background-color: transparent;
     border: none;
     margin-right: 35px;
@@ -46,7 +46,7 @@
   text-align: center;
   padding: 22px;
 
-  @media (min-width: $tablet) {
+  @media #{$tablet} {
     position: relative;
     font-size: 18px;
     line-height: 24px;
@@ -66,14 +66,14 @@
     }
   }
 
-  @media (min-width: $desktop) {
+  @media #{$desktop} {
     font-size: 20px;
     line-height: 30px;
   }
 }
 
 .main-nav--index .main-nav__link {
-  @media (min-width: $desktop) {
+  @media #{$desktop} {
     color: $white;
 
     &--current {

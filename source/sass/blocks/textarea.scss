@@ -10,7 +10,7 @@
   border: 1px solid $grey-200;
   padding: 10px 15px;
 
-  @media (min-width: $tablet) {
+  @media #{$tablet} {
     font-size: 20px;
     line-height: 30px;
     padding: 10px 20px;
