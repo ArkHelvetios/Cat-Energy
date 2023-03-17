@@ -1,0 +1,28 @@
+.logo {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  align-items: center;
+
+  &::before {
+    content: "";
+    display: block;
+    min-width: 35px;
+    height: 38px;
+    background-image: url("../../img/logo/logo-mobile-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  @media #{$tablet} {
+    display: block;
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.logo__image {
+  width: 101px;
+  height: 18px;
+  justify-self: center;
+}

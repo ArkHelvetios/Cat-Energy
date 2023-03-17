@@ -1,55 +1,10 @@
 .page-header {
-  display: flex;
-  position: relative;
+  background-color: $white;
   border-bottom: 1px solid $grey-200;
-  padding-top: 12px;
-  padding-bottom: 12px;
   z-index: 1;
 
   @media #{$tablet} {
+    background-color: transparent;
     border: none;
-  }
-}
-
-.page-header__container {
-  display: flex;
-  align-items: center;
-  min-height: 38px;
-}
-
-.page-header__logo {
-  flex-grow: 1;
-  display: grid;
-  grid-template-columns: min-content 1fr;
-  align-items: center;
-
-  &::before {
-    content: "";
-    display: block;
-    min-width: 35px;
-    height: 38px;
-    background-image: url("../../img/logo/logo-mobile-icon.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
-
-  @media #{$tablet} {
-    display: block;
-    flex-grow: 0;
-    &::before {
-      display: none;
-    }
-  }
-}
-
-.page-header__logo-image {
-  width: 101px;
-  height: 18px;
-  justify-self: center;
-}
-
-.page-header__main-nav {
-  @media #{$tablet} {
-    flex-grow: 1;
   }
 }
