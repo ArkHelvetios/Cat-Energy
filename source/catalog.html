@@ -11,8 +11,15 @@
     <header class="page-header container">
       <nav class="page-header__navigation navigation navigation--nojs">
         <a href="index.html" class="navigation__logo logo">
-          <img class="logo__image" src="img/logo/logo-text-only.svg" alt="Логотип Cat Energy" width="101" height="18">
+          <picture>
+            <source type="image/svg+xml" media="(min-width: 1280px)" srcset="img/logo/logo-desktop.svg">
+            <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+            <img class="logo__image" src="img/logo/logo-mobile.svg" width="35" height="38" alt="Логотип Cat Energy">
+          </picture>
         </a>
+        <svg class="navigation__logo-text" width="102" height="19" aria-hidden="true">
+          <use xlink:href="img/sprite.svg#logo-text"></use>
+        </svg>
         <button class="navigation__toggle" type="button" aria-label="Открыть меню">
           <span class="navigation__toggle-icon" aria-hidden="true"></span>
         </button>
@@ -196,7 +203,9 @@
         <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?ll=30.324868%2C59.938757&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%3D%3D&z=14" frameborder="1" allowfullscreen="true"></iframe>
       </section>
       <div class="page-footer__bottom container">
-        <img class="page-footer__logo" src="img/logo/logo-text-only.svg" alt="Логотип Cat Energy" width="128" height="24">
+        <svg class="page-footer__logo" width="128" height="24" aria-hidden="true">
+          <use xlink:href="img/sprite.svg#logo-text"></use>
+        </svg>
         <ul class="page-footer__socials socials">
           <li class="socials__item">
             <a href="#" class="socials__link">

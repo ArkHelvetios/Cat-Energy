@@ -1,28 +1,36 @@
 .logo {
-  display: grid;
-  grid-template-columns: min-content 1fr;
-  align-items: center;
-
-  &::before {
-    content: "";
-    display: block;
-    min-width: 35px;
-    height: 38px;
-    background-image: url("../../img/logo/logo-mobile-icon.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
-
   @media #{$tablet} {
     display: block;
+
     &::before {
       display: none;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+
+    &:not([href]) {
+      pointer-events: none;
     }
   }
 }
 
 .logo__image {
-  width: 101px;
-  height: 18px;
-  justify-self: center;
+  width: 35px;
+  height: 38px;
+
+  @media #{$tablet} {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media #{$desktop} {
+    width: 202px;
+    height: 59px;
+  }
 }

@@ -4,9 +4,15 @@
 @import "globals/variables.scss";
 @import "globals/global.scss";
 
+// Mixins
+
+@import "mixins/container.scss";
+@import "mixins/button.scss";
+@import "mixins/title.scss";
+@import "mixins/title-section.scss";
+
 // Blocks
 
-@import "blocks/button.scss";
 @import "blocks/page.scss";
 @import "blocks/page-header.scss";
 @import "blocks/page-main.scss";
@@ -14,8 +20,6 @@
 @import "blocks/navigation.scss";
 @import "blocks/logo.scss";
 @import "blocks/intro.scss";
-@import "blocks/title.scss";
-@import "blocks/title-section.scss";
 @import "blocks/program-types.scss";
 @import "blocks/benefits.scss";
 @import "blocks/example.scss";
@@ -32,7 +36,3 @@
 @import "blocks/catalog.scss";
 @import "blocks/card.scss";
 @import "blocks/extra-goods.scss";
-
-// Mixins
-
-@import "mixins/container.scss";
