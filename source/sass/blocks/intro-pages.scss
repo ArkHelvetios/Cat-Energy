@@ -1,0 +1,36 @@
+.intro-pages {
+  padding-top: 27px;
+
+  @media #{$tablet} {
+    padding-top: 65px;
+  }
+
+  @media #{$desktop} {
+    padding-top: 77px;
+  }
+}
+
+.intro-pages__title {
+  margin: 0;
+  margin-bottom: 37px;
+
+  @media #{$tablet} {
+    margin-bottom: 55px;
+  }
+
+  &:only-child {
+    margin-bottom: 0;
+  }
+}
+
+.intro-pages__description {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin: 0;
+
+  @media #{$tablet} {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

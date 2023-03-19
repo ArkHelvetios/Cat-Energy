@@ -27,6 +27,8 @@ $mobile-only: "(max-width: #{$width-tablet - 1})";
 $tablet: "(min-width: #{$width-tablet})";
 $desktop: "(min-width: #{$width-desktop})";
 
+$retina: "(min-resolution: 2dppx)";
+
 :root {
   --container-padding-mobile: 20px;
   --container-padding: 30px;
