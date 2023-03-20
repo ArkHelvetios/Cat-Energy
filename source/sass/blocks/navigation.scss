@@ -29,6 +29,8 @@
         position: relative;
         left: calc(var(--container-padding-mobile) * -1);
         border-top: 1px solid $grey-200;
+        margin-top: 13px;
+        margin-bottom: -13px;
         transform: none;
         z-index: 0;
       }

@@ -1,6 +1,10 @@
 .benefits__title {
   margin: 0;
   margin-bottom: 38px;
+
+  @media #{$tablet} {
+    margin-bottom: 32px;
+  }
 }
 
 .benefits__list {
@@ -23,18 +27,9 @@
 }
 
 .benefits__item {
-  display: flex;
   position: relative;
-  font-family: $font-family-secondary;
-  color: $grey-500;
-
-  &::before {
-    content: "";
-    min-width: 60px;
-    height: 60px;
-    background-color: $green-basic;
-    margin-right: 20px;
-  }
+  display: flex;
+  align-items: center;
 
   &::after {
     counter-increment: benefit-num;
@@ -53,17 +48,41 @@
   @media #{$tablet} {
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
     width: 230px;
     min-height: 280px;
-
-    &::before {
-      width: 80px;
-      height: 80px;
-      margin-bottom: 31px;
-    }
 
     &::after {
       display: block;
     }
+  }
+}
+
+.benefits__icon-wrapper {
+  display: flex;
+  min-width: 60px;
+  height: 60px;
+  color: $white;
+  background-color: $green-basic;
+  margin-right: 20px;
+
+  @media #{$tablet} {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 31px;
+  }
+}
+
+.benefits__icon {
+  margin: auto;
+}
+
+.benefits__text {
+  font-family: $font-family-secondary;
+  color: $grey-500;
+  margin: 0;
+
+  @media #{$tablet} {
+
   }
 }
