@@ -1,5 +1,42 @@
-.comparison__images {
+.comparison__picture-wrapper {
+  overflow: hidden;
+  position: relative;
+  margin-left: calc(var(--container-padding-mobile) * -1);
+  margin-right: calc(var(--container-padding-mobile) * -1);
+  scrollbar-width: none;
+}
+
+.comparison__picture-inner {
+  display: flex;
   margin-bottom: 10px;
+  will-change: transform;
+  transform: translateX(0);
+  transition: transform 300ms linear;
+  transition-delay: 0ms;
+  cursor: grab;
+
+  &--touched {
+    cursor: grabbing;
+
+    & .comparison__image {
+      transform: scale(0.9);
+    }
+  }
+
+}
+
+.comparison__picture {
+  min-width: 100%;
+}
+
+.comparison__image {
+  display: block;
+  object-fit: contain;
+  width: 100%;
+  height: 240px;
+  transition: transform 300ms ease-in-out;
+  touch-action: none;
+  user-select: none;
 }
 
 .comparison__control {
@@ -20,7 +57,28 @@
   text-transform: uppercase;
   background-color: transparent;
   border: none;
-  padding: 10px;
+  border-bottom: 1px dotted rgba($black, 0.25);
+  padding: 0;
+  user-select: none;
+  cursor: pointer;
+
+  &:hover {
+    border-bottom-style: solid;
+    border-bottom-color: rgba($black, 0.4);
+  }
+
+  &:active {
+    border-bottom-color: rgba($black, 0);
+  }
+
+  &--before {
+    margin-right: 13px;
+  }
+
+  &--after {
+    margin-left: 13px;
+  }
+
 }
 
 .comparison__bar {
@@ -37,4 +95,7 @@
   height: 6px;
   background-color: $green-basic;
   border-radius: 6px;
+  transform: translateX(0);
+  transition: transform 300ms ease-in-out;
+  user-select: none;
 }

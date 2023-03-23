@@ -151,16 +151,38 @@
             </div>
           </div>
           <div class="example__comparison comparison">
-            <div class="comparison__images">
-              <img class="comparison__image-before" src="img/cat-fat.png" alt="Изображение толстого кота">
-              <!-- <img class="comparison__image-after" src="img/cat-skinny.png" alt="Изображение худого кота"> -->
+            <div class="comparison__picture-wrapper">
+              <div class="comparison__picture-inner">
+                  <picture class="comparison__picture">
+                    <source type="image/avif" media="(min-width: 1280px)" srcset="img/comparison/cat-before-desktop.avif 1x, img/comparison/cat-before-desktop@2x.avif 2x">
+                    <source type="image/avif" media="(min-width: 768px)" srcset="img/comparison/cat-before-tablet.avif 1x, img/comparison/cat-before-tablet@2x.avif 2x">
+                    <source type="image/avif" srcset="img/comparison/cat-before-mobile.avif 1x, img/comparison/cat-before-mobile@2x.avif 2x">
+                    <source type="image/webp" media="(min-width: 1280px)" srcset="img/comparison/cat-before-desktop.webp 1x, img/comparison/cat-before-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/comparison/cat-before-tablet.webp 1x, img/comparison/cat-before-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/comparison/cat-before-mobile.webp 1x, img/comparison/cat-before-mobile@2x.webp 2x">
+                    <source media="(min-width: 1280px)" srcset="img/comparison/cat-before-desktop.png 1x, img/comparison/cat-before-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/comparison/cat-before-tablet.jpg 1x, img/comparison/cat-before-tablet@2x.jpg 2x">
+                    <img class="comparison__image comparison__image--before" src="img/comparison/cat-before-mobile.png" srcset="img/comparison/cat-before-mobile@2x.png 2x" alt="Фото кота Бориса до диеты" width="311" height="232">
+                </picture>
+                <picture class="comparison__picture">
+                  <source type="image/avif" media="(min-width: 1280px)" srcset="img/comparison/cat-after-desktop.avif 1x, img/comparison/cat-after-desktop@2x.avif 2x">
+                  <source type="image/avif" media="(min-width: 768px)" srcset="img/comparison/cat-after-tablet.avif 1x, img/comparison/cat-after-tablet@2x.avif 2x">
+                  <source type="image/avif" srcset="img/comparison/cat-after-mobile.avif 1x, img/comparison/cat-after-mobile@2x.avif 2x">
+                  <source type="image/webp" media="(min-width: 1280px)" srcset="img/comparison/cat-after-desktop.webp 1x, img/comparison/cat-after-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/comparison/cat-after-tablet.webp 1x, img/comparison/cat-after-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/comparison/cat-after-mobile.webp 1x, img/comparison/cat-after-mobile@2x.webp 2x">
+                  <source media="(min-width: 1280px)" srcset="img/comparison/cat-after-desktop.png 1x, img/comparison/cat-after-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/comparison/cat-after-tablet.jpg 1x, img/comparison/cat-after-tablet@2x.jpg 2x">
+                  <img class="comparison__image comparison__image--after" src="img/comparison/cat-after-mobile.png" srcset="img/comparison/cat-after-mobile@2x.png 2x" alt="Фото кота Бориса после диеты" width="251" height="240">
+                </picture>
+              </div>
             </div>
             <div class="comparison__control">
-              <button class="comparison__button">Было</button>
+              <button class="comparison__button comparison__button--before">Было</button>
               <div class="comparison__bar">
                 <div class="comparison__toggle"></div>
               </div>
-              <button class="comparison__button">Стало</button>
+              <button class="comparison__button comparison__button--after">Стало</button>
             </div>
           </div>
         </div>
@@ -179,7 +201,7 @@
             </address>
           </div>
         </div>
-        <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?ll=30.324868%2C59.938757&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%3D%3D&z=14" frameborder="1" allowfullscreen="true"></iframe>
+        <!-- <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?ll=30.324868%2C59.938757&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%3D%3D&z=14" frameborder="1" allowfullscreen="true"></iframe> -->
       </section>
       <div class="page-footer__bottom container">
         <svg class="page-footer__logo" width="128" height="24" aria-hidden="true">
@@ -223,5 +245,6 @@
     </footer>
 
     <script src="js/navigation.js"></script>
+    <script src="js/comparison.js"></script>
   </body>
 </html>
