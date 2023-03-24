@@ -1,32 +1,59 @@
 .comparison__picture-wrapper {
   overflow: hidden;
-  position: relative;
   margin-left: calc(var(--container-padding-mobile) * -1);
   margin-right: calc(var(--container-padding-mobile) * -1);
-  scrollbar-width: none;
+  margin-bottom: 10px;
+
+  @media #{$tablet} {
+    margin: 0;
+    margin-bottom: 10px;
+  }
 }
 
 .comparison__picture-inner {
   display: flex;
-  margin-bottom: 10px;
   will-change: transform;
   transform: translateX(0);
   transition: transform 300ms linear;
   transition-delay: 0ms;
   cursor: grab;
 
-  &--touched {
-    cursor: grabbing;
-
-    & .comparison__image {
-      transform: scale(0.9);
-    }
+  @media #{$tablet} {
+    width: 704px;
+    height: 520px;
+    margin: auto;
   }
 
+  &--touched .comparison__image {
+    cursor: grabbing;
+    transform: scale(0.9);
+  }
 }
 
 .comparison__picture {
   min-width: 100%;
+
+  @media #{$tablet} {
+    display: flex;
+    min-width: auto;
+    width: 50%;
+
+    &--before {
+      justify-content: flex-start;
+
+      & .comparison__image {
+        object-position: left -15px bottom 0px;
+      }
+    }
+
+    &--after {
+      justify-content: flex-end;
+
+      & .comparison__image {
+        object-position: right 60px bottom 0px;
+      }
+    }
+  }
 }
 
 .comparison__image {
@@ -37,16 +64,29 @@
   transition: transform 300ms ease-in-out;
   touch-action: none;
   user-select: none;
+
+  @media #{$tablet} {
+    width: auto;
+    height: 520px;
+    object-fit: cover;
+  }
 }
 
 .comparison__control {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 18px;
   width: 80%;
+  max-width: 320px;
   margin-left: auto;
   margin-right: auto;
+
+  @media #{$tablet} {
+    gap: 25px;
+    max-width: 590px;
+    width: auto;
+  }
 }
 
 .comparison__button {
@@ -62,6 +102,11 @@
   user-select: none;
   cursor: pointer;
 
+  @media #{$tablet} {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
   &:hover {
     border-bottom-style: solid;
     border-bottom-color: rgba($black, 0.4);
@@ -71,13 +116,6 @@
     border-bottom-color: rgba($black, 0);
   }
 
-  &--before {
-    margin-right: 13px;
-  }
-
-  &--after {
-    margin-left: 13px;
-  }
 
 }
 
@@ -88,6 +126,13 @@
   border: 1px solid $grey-300;
   border-radius: 6px;
   padding: 3px 6px;
+
+  @media #{$tablet} {
+    height: auto;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
 }
 
 .comparison__toggle {
@@ -98,4 +143,16 @@
   transform: translateX(0);
   transition: transform 300ms ease-in-out;
   user-select: none;
+
+  @media #{$tablet} {
+    display: none;
+  }
+}
+
+.comparison__range {
+  display: none;
+
+  @media #{$tablet} {
+    display: block;
+  }
 }
