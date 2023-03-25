@@ -14,3 +14,51 @@
     margin: 0;
   }
 }
+
+.socials__link {
+  color: $grey-400;
+
+  &:hover {
+    color: $green-basic;
+  }
+
+  &:active {
+    color: $green-basic;
+    opacity: 0.3;
+  }
+}
+
+
+.socials__icon {
+  display: block;
+
+  &--vkontakte {
+    width: 23px;
+    height: 13px;
+
+    @media #{$tablet} {
+      width: 29px;
+      height: 17px;
+    }
+  }
+
+  &--instagram {
+    width: 16px;
+    height: 16px;
+
+    @media #{$tablet} {
+      width: 23px;
+      height: 23px;
+    }
+  }
+
+  &--facebook {
+    width: 13px;
+    height: 20px;
+
+    @media #{$tablet} {
+      width: 20px;
+      height: 27px;
+    }
+  }
+}
