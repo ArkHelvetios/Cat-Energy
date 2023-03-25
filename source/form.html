@@ -52,72 +52,78 @@
         <div class="form-consult__pet-program-container">
           <fieldset class="form-consult__fieldset">
             <legend class="visually-hidden">О питомце</legend>
-            <label class="form-consult__field field">
-              <span class="field__label">Имя:</span>
-              <input class="field__input" type="text" name="pet-name" placeholder="Барсик" required>
+            <label class="form-consult__field input-field">
+              <span class="input-field__label">Имя:*</span>
+              <input class="input-field__input" type="text" name="pet-name" placeholder="Барсик" required>
             </label>
-            <label class="form-consult__field field">
-              <span class="field__label">Вес (кг):</span>
-              <input class="field__input" type="number" name="pet-wight" placeholder="7" required>
+            <label class="form-consult__field input-field">
+              <span class="input-field__label">Вес (кг):*</span>
+              <input class="input-field__input" type="number" name="pet-wight" placeholder="7" required>
             </label>
-            <label class="form-consult__field field">
-              <span class="field__label">Возраст (лет):</span>
-              <input class="field__input" type="number" name="pet-age" placeholder="7">
+            <label class="form-consult__field input-field">
+              <span class="input-field__label">Возраст (лет):</span>
+              <input class="input-field__input" type="number" name="pet-age" placeholder="7">
             </label>
           </fieldset>
           <fieldset class="form-consult__fieldset form-consult__fieldset--programs">
             <legend class="visually-hidden">Выбор программы</legend>
-            <label class="form-consult__radio radio">
-              <input class="radio__input visually-hidden" type="radio" name="program type" value="weight-loss" checked>
-              <span class="radio__label">Похудение</span>
+            <label class="form-consult__input-control input-control input-control--radio">
+              <input class="input-control__input visually-hidden" type="radio" name="program type" value="weight-loss" checked>
+              <span class="input-control__label">Похудение</span>
             </label>
-            <label class="form-consult__radio radio">
-              <input class="radio__input visually-hidden" type="radio" name="program type" value="weight-gain">
-              <span class="radio__label">Набор массы</span>
+            <label class="form-consult__input-control input-control input-control--radio">
+              <input class="input-control__input visually-hidden" type="radio" name="program type" value="weight-gain">
+              <span class="input-control__label">Набор массы</span>
             </label>
-            <label class="form-consult__radio radio">
-              <input class="radio__input visually-hidden" type="radio" name="program type" value="need-advice">
-              <span class="radio__label">Не знаю (Нужен ваш совет)</span>
+            <label class="form-consult__input-control input-control input-control--radio">
+              <input class="input-control__input visually-hidden" type="radio" name="program type" value="need-advice">
+              <span class="input-control__label">Не знаю (Нужен ваш совет)</span>
             </label>
           </fieldset>
         </div>
         <fieldset class="form-consult__fieldset">
           <legend class="form-consult__legend title-section">Контактные данные (владельца кота)</legend>
           <div class="form-consult__owner-info-container">
-            <label class="form-consult__field form-consult__field--email field">
-              <span class="field__label">E-mail:</span>
-              <input class="field__input field__input--email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+            <label class="form-consult__field input-field">
+              <span class="input-field__label">E-mail:*</span>
+              <input class="input-field__input input-field__input--email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+              <svg class="input-field__icon" width="19" height="14" aria-hidden="true">
+                <use href="img/sprite.svg#icon-envelope"></use>
+              </svg>
             </label>
-            <label class="form-consult__field field">
-              <span class="field__label">Телефон:</span>
-              <input class="field__input field__input--tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+            <label class="form-consult__field input-field">
+              <span class="input-field__label">Телефон:*</span>
+              <input class="input-field__input input-field__input--tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+              <svg class="input-field__icon" width="20" height="20" aria-hidden="true">
+                <use href="img/sprite.svg#icon-phone"></use>
+              </svg>
             </label>
           </div>
         </fieldset>
         <div class="form-consult__fieldset">
           <label>
             <span class="form-consult__legend title-section">Комментарий</span>
-            <textarea class="form-consult__textarea textarea" name="about-pet" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="form-consult__input-textarea input-textarea" name="about-pet" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
           </label>
         </div>
         <fieldset class="form-consult__fieldset">
           <legend class="form-consult__legend title-section">Дополнительно</legend>
-          <div class="form-consult__checkbox-list">
-            <label class="form-consult__checkbox checkbox">
-              <input class="checkbox__input visually-hidden" type="checkbox" name="sweetener" checked>
-              <span class="checkbox__label">Сахарозаменитель</span>
+          <div class="form-consult__extra-list">
+            <label class="form-consult__input-control input-control">
+              <input class="input-control__input visually-hidden" type="checkbox" name="sweetener" checked>
+              <span class="input-control__label">Сахарозаменитель</span>
             </label>
-            <label class="form-consult__checkbox checkbox">
-              <input class="checkbox__input visually-hidden" type="checkbox" name="water">
-              <span class="checkbox__label">Питьевая вода</span>
+            <label class="form-consult__input-control input-control">
+              <input class="input-control__input visually-hidden" type="checkbox" name="water">
+              <span class="input-control__label">Питьевая вода</span>
             </label>
-            <label class="form-consult__checkbox checkbox">
-              <input class="checkbox__input visually-hidden" type="checkbox" name="milk">
-              <span class="checkbox__label">Молоко</span>
+            <label class="form-consult__input-control input-control">
+              <input class="input-control__input visually-hidden" type="checkbox" name="milk">
+              <span class="input-control__label">Молоко</span>
             </label>
-            <label class="form-consult__checkbox checkbox">
-              <input class="checkbox__input visually-hidden" type="checkbox" name="vitamins">
-              <span class="checkbox__label">Витамины</span>
+            <label class="form-consult__input-control input-control">
+              <input class="input-control__input visually-hidden" type="checkbox" name="vitamins">
+              <span class="input-control__label">Витамины</span>
             </label>
           </div>
         </fieldset>

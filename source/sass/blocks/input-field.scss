@@ -1,4 +1,5 @@
-.field {
+.input-field {
+  position: relative;
   display: flex;
   align-items: center;
   font-size: 16px;
@@ -11,7 +12,7 @@
 }
 
 
-.field__label {
+.input-field__label {
   max-width: 50%;
   color: $grey-500;
   overflow-wrap: break-word;
@@ -19,7 +20,7 @@
   cursor: pointer;
 }
 
-.field__input {
+.input-field__input {
   flex-grow: 1;
   width: 50%;
   font-family: inherit;
@@ -29,8 +30,36 @@
   border: 1px solid $grey-200;
   padding: 10px 16px;
 
+  &:hover {
+    border: 1px solid $grey-300;
+  }
+
+  &:focus {
+    outline: 2px solid $grey-500;
+    outline-offset: -1px;
+
+    & + .input-field__icon {
+      color: $green-basic;
+    }
+  }
+
+  &--error {
+    outline-color: $color-error;
+
+    & + .input-field__icon {
+      color: $color-error;
+    }
+  }
+
   &--email,
   &--tel {
     padding-right: 50px;
   }
+}
+
+.input-field__icon {
+  position: absolute;
+  right: 0;
+  width: 50px;
+  color: $grey-600;
 }

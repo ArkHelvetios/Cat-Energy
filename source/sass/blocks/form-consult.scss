@@ -51,19 +51,21 @@
   &:last-child {
     margin-bottom: 0;
   }
+}
 
-  &--email {
+.form-consult__input-control:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.form-consult__owner-info-container {
+  & .form-consult__field {
     @media #{$desktop} {
       margin-bottom: 0;
     }
   }
 }
 
-.form-consult__radio:not(:last-child) {
-  margin-bottom: 13px;
-}
-
-.form-consult__checkbox-list {
+.form-consult__extra-list {
   display: grid;
   gap: 13px;
 
