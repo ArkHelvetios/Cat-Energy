@@ -10,12 +10,44 @@
     "html academy",
     "frontend"
   ],
-  "main": "gulpfile.js",
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "github:htmlacademy/editorconfig-cli",
+    "autoprefixer": "^10.4.14",
+    "browser-sync": "^2.29.1",
+    "del": "^6.1.1",
+    "gulp": "^4.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-terser": "^2.1.0",
+    "postcss": "^8.4.21",
+    "postcss-csso": "^6.0.1",
+    "sass": "^1.60.0",
+    "stylelint": "^15.3.0",
+    "stylelint-config-htmlacademy": "^1.1.4"
+  },
+  "overrides": {
+    "chokidar": "^3.5.0",
+    "download": "^7.0.0",
+    "deep-extend": "^0.6.0",
+    "find-versions": "^4.0.0",
+    "got": "^11.0.0",
+    "glob-stream": "^7.0.0",
+    "glob-parent": "^6.0.0",
+    "lintspaces": "^0.10.0",
+    "svgo": "^2.8.0",
+    "trim-newlines": "^3.0.0"
+  },
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp styles",
+    "build": "gulp build",
     "start": "gulp"
   },
   "browserslist": [
@@ -33,27 +65,5 @@
   ],
   "engines": {
     "node": "^18.0.0"
-  },
-  "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "github:htmlacademy/editorconfig-cli",
-    "autoprefixer": "^10.4.14",
-    "browser-sync": "^2.29.1",
-    "gulp": "^4.0.2",
-    "gulp-plumber": "^1.2.1",
-    "gulp-postcss": "^9.0.1",
-    "gulp-sass": "^5.1.0",
-    "gulp-sass-glob": "^1.1.0",
-    "gulp-sourcemaps": "^3.0.0",
-    "postcss": "^8.4.21",
-    "sass": "^1.60.0",
-    "stylelint": "^15.3.0",
-    "stylelint-config-htmlacademy": "^1.1.4"
-  },
-  "overrides": {
-    "chokidar": "^3.5.0",
-    "glob-stream": "^7.0.0",
-    "glob-parent": "^6.0.0",
-    "deep-extend": "^0.6.0",
-    "lintspaces": "^0.10.0"
   }
 }
