@@ -1,0 +1,9 @@
+.breakline {
+  display: none;
+
+  @media #{$mobile-only} {
+    &--mob {
+      display: block;
+    }
+  }
+}

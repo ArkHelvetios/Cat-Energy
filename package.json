@@ -27,7 +27,7 @@
     "gulp-sourcemaps": "^3.0.0",
     "gulp-svgstore": "^9.0.0",
     "gulp-terser": "^2.1.0",
-    "gulp-webp": "4.0.1",
+    "gulp-webp": "^4.0.0",
     "postcss": "^8.4.21",
     "postcss-csso": "^6.0.1",
     "sass": "^1.60.0",
@@ -40,12 +40,12 @@
     "deep-extend": "^0.6.0",
     "download": "^7.0.0",
     "find-versions": "^4.0.0",
-    "glob-stream": "^7.0.0",
     "glob-parent": "^6.0.0",
+    "glob-stream": "^7.0.0",
     "got": "^11.0.0",
+    "imagemin-svgo": "^9.0.0",
     "lintspaces": "^0.10.0",
     "sharp": "^0.32.0",
-    "imagemin-svgo": "^9.0.0",
     "trim-newlines": "^3.0.0"
   },
   "scripts": {
@@ -53,6 +53,7 @@
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
+    "live": "gulp live",
     "start": "gulp"
   },
   "browserslist": [

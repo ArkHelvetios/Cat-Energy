@@ -5,6 +5,7 @@
     "img title"
     "img info"
     "btn btn";
+  row-gap: 13px;
   border-top: 1px solid $grey-200;
   padding: 20px;
   padding-bottom: 25px;
@@ -12,6 +13,7 @@
   @media #{$tablet} {
     display: flex;
     flex-direction: column;
+    row-gap: 0;
     background-color: $grey-100;
     border: none;
     padding: 0 38px 40px 38px;
@@ -20,13 +22,48 @@
   &--load-more {
     display: flex;
     flex-direction: column;
+    row-gap: 0;
     text-align: center;
     border-bottom: 1px solid $grey-200;
 
+    &::before {
+      content: "";
+      align-self: center;
+      width: 30px;
+      height: 30px;
+      background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' stroke='%23D3D3D3' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='15' x2='15' y2='30' stroke-width='2'/%3E%3Cline x1='30' y1='15' y2='15' stroke-width='2'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      margin-bottom: 23px;
+    }
+
     @media #{$tablet} {
-      justify-content: end;
       background-color: $white;
       border: 1px solid $grey-200;
+      padding-top: 50px;
+
+      &::before {
+        width: 60px;
+        height: 60px;
+        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' stroke='%23D3D3D3' viewBox='0 0 60 60' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='30' x2='30' y2='60' stroke-width='2'/%3E%3Cline x1='60' y1='30' y2='30' stroke-width='2'/%3E%3C/svg%3E%0A");
+        margin-bottom: 50px;
+      }
+    }
+
+    & .card__title {
+      margin-bottom: 8px;
+
+      @media #{$tablet} {
+        margin-bottom: 23px;
+      }
+    }
+
+    & .card__description {
+      margin-bottom: 21px;
+    }
+
+    & .card__button {
+      margin-top: auto;
     }
   }
 }
@@ -38,7 +75,6 @@
   font-weight: inherit;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 8px;
 
   @media #{$tablet} {
     font-size: 20px;
@@ -54,15 +90,33 @@
   line-height: 16px;
   color: $grey-500;
   margin: 0;
+
+  @media #{$tablet} {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
-.card__image {
+.card__picture {
   grid-area: img;
+  justify-self: center;
 
   @media #{$tablet} {
     order: -1;
     align-self: center;
     margin-bottom: 34px;
+  }
+}
+
+.card__image {
+  display: block;
+  width: 140px;
+  height: 112px;
+  object-fit: contain;
+
+  @media #{$tablet} {
+    width: 168px;
+    height: 200px;
   }
 }
 

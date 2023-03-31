@@ -39,13 +39,37 @@
 }
 
 .page-main__form {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
+
+  @media #{$tablet} {
+    margin-bottom: 72px;
+  }
+
+  @media #{$desktop} {
+    margin-bottom: 82px;
+  }
 }
 
 .page-main__catalog {
   margin-bottom: 25px;
+
+  @media #{$tablet} {
+    margin-bottom: 68px;
+  }
+
+  @media #{$desktop} {
+    margin-bottom: 75px;
+  }
 }
 
 .page-main__extra-goods {
   margin-bottom: 35px;
+
+  @media #{$tablet} {
+    margin-bottom: 76px;
+  }
+
+  @media #{$desktop} {
+    margin-bottom: 86px;
+  }
 }

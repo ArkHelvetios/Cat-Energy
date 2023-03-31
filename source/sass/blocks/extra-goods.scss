@@ -1,6 +1,10 @@
 .extra-goods__title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 36px;
+
+  @media #{$tablet} {
+    margin-bottom: 80px;
+  }
 }
 
 .extra-goods__inner {
@@ -108,15 +112,75 @@
   }
 }
 
-.extra-goods__promo-cta {
+.extra-goods__cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  justify-content: space-between;
   min-height: 289px;
   width: 100%;
+  color: $white;
+  background-color: $green-basic;
+  background-image: url("../../img/extra-goods/gift-background.png");
+  background-image: image-set(
+    url("../../img/extra-goods/gift-background.avif") type("image/avif"),
+    url("../../img/extra-goods/gift-background.webp") type("image/webp")
+    );
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  padding: 60px;
+  padding-bottom: 40px;
+
+  @media #{$retina} {
+    background-image: url("../../img/extra-goods/gift-background@2x.jpg");
+    background-image: image-set(
+      url("../../img/extra-goods/gift-background@2x.avif") type("image/avif"),
+      url("../../img/extra-goods/gift-background@2x.webp") type("image/webp")
+    );
+  }
+
+  @media #{$tablet-only} {
+    flex-direction: row;
+    min-height: 200px;
+    background-image: url("../../img/extra-goods/gift-background-tablet.png");
+    background-image: image-set(
+      url("../../img/extra-goods/gift-background-tablet.avif") type("image/avif"),
+      url("../../img/extra-goods/gift-background-tablet.webp") type("image/webp")
+    );
+    padding: 64px 124px 70px 84px;
+
+    @media #{$retina} {
+      background-image: url("../../img/extra-goods/gift-background-tablet@2x.jpg");
+      background-image: image-set(
+        url("../../img/extra-goods/gift-background-tablet@2x.avif") type("image/avif"),
+        url("../../img/extra-goods/gift-background-tablet@2x.webp") type("image/webp")
+      );
+    }
+  }
+
+  @media #{$desktop} {
+    background-position: 50% 100%;
+    padding: 40px;
+    padding-top: 56px;
+  }
+}
+
+.extra-goods__cta-icon {
+  min-width: 56px;
+  height: 60px;
+}
+
+.extra-goods__cta-text {
   font-family: $font-family-secondary;
+  width: 161px;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: $white;
-  background-color: $green-basic;
   margin: 0;
-  padding: 60px;
+
+  @media #{$tablet-only} {
+    text-align: start;
+  }
 }

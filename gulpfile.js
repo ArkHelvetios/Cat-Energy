@@ -88,7 +88,10 @@ const imagesWebp = () => {
 
 const imagesAvif = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
-    .pipe(avif())
+    .pipe(avif({
+      quality: 60,
+      speed: 4
+    }))
     .pipe(gulp.dest('build/img'))
 }
 
@@ -120,12 +123,17 @@ const server = (done) => {
   done();
 };
 
+const reload = (done) => {
+  sync.reload();
+  done();
+}
+
 // Watcher
 
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(stylesBuild));
   gulp.watch('source/js/*.js', gulp.series(jsMinify));
-  gulp.watch('source/**/*.html', gulp.series(htmlMinify, sync.reload));
+  gulp.watch('source/**/*.html', gulp.series(htmlMinify, reload));
 };
 
 // Exports

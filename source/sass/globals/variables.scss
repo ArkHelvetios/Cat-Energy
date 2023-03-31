@@ -25,6 +25,7 @@ $width-desktop: 1280px;
 
 $mobile-only: "(max-width: #{$width-tablet - 1})";
 $tablet: "(min-width: #{$width-tablet})";
+$tablet-only: "(min-width: #{$width-tablet}) and (max-width: #{$width-desktop - 1})";
 $desktop: "(min-width: #{$width-desktop})";
 
 $retina: "(min-resolution: 2dppx)";
