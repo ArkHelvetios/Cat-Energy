@@ -1,8 +1,19 @@
 .contacts {
-  position: relative;
-
+  display: grid;
+  grid-template-rows: auto auto auto;
   &--index {
     background-color: $white;
+  }
+}
+
+.contacts__container {
+  @media #{$desktop} {
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    z-index: 1;
   }
 }
 
@@ -17,12 +28,11 @@
   }
 
   @media #{$desktop} {
-    position: absolute;
-    top: 95px;
-    width: 570px;
     background-color: $white;
-    padding: 60px 75px;
     box-shadow: 0 2px 15px 0 rgba($black, 0.25);
+    padding: 60px 75px;
+    margin: 20px 0;
+    overflow-wrap: anywhere;
   }
 }
 
@@ -70,9 +80,12 @@
   margin-bottom: -5px;
 
   @media #{$tablet} {
-    height: 400px;
+    min-height: 400px;
   }
 
   @media #{$desktop} {
+    height: 100%;
+    grid-row: 1/-1;
+    grid-column: 1/-1;
   }
 }

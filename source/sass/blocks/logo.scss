@@ -21,16 +21,16 @@
 }
 
 .logo__image {
-  width: 35px;
+  min-width: 35px;
   height: 38px;
 
   @media #{$tablet} {
-    width: 174px;
+    min-width: 174px;
     height: 52px;
   }
 
   @media #{$desktop} {
-    width: 202px;
+    min-width: 202px;
     height: 59px;
   }
 }

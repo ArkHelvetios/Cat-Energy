@@ -47,10 +47,10 @@
 
   @media #{$tablet} {
     flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
     width: 230px;
     min-height: 280px;
+    padding-top: 40px;
 
     &::after {
       display: block;
@@ -81,8 +81,4 @@
   font-family: $font-family-secondary;
   color: $grey-500;
   margin: 0;
-
-  @media #{$tablet} {
-
-  }
 }

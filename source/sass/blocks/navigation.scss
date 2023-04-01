@@ -21,6 +21,7 @@
 
   @media #{$desktop} {
     padding-top: 53px;
+    flex-wrap: nowrap;
   }
 
   &--nojs {
@@ -63,6 +64,13 @@
   }
 
   &--index {
+    .navigation__list {
+      @media #{$desktop} {
+        max-width: 50%;
+        margin-left: auto;
+      }
+    }
+
     .navigation__link {
       @media #{$desktop} {
         color: $white;

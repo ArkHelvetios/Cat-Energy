@@ -24,6 +24,7 @@
 .extra-goods__list {
   border-collapse: collapse;
   width: 100%;
+  overflow-wrap: anywhere;
 }
 
 .extra-goods__item {
@@ -132,6 +133,7 @@
   background-size: cover;
   padding: 60px;
   padding-bottom: 40px;
+  overflow-wrap: anywhere;
 
   @media #{$retina} {
     background-image: url("../../img/extra-goods/gift-background@2x.jpg");
