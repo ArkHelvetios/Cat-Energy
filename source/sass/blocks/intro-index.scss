@@ -56,14 +56,14 @@
 
   @media #{$desktop} {
     position: static;
-    padding-top: 32px;
+    padding-top: 29px;
     padding-bottom: 54px;
 
     &::before,
     &::after {
       display: block;
       width: 50%;
-      height: 694px;
+      height: 689px;
       left: auto;
       right: 0;
     }
@@ -74,6 +74,7 @@
         url("../../img/intro/index-background-desktop.webp") type("image/webp")
       );
       background-size: cover;
+      background-position: 0 0;
 
       @media #{$retina} {
         background-image: url("../../img/intro/index-background-desktop@2x.jpg");
@@ -93,13 +94,14 @@
 
   @media #{$tablet} {
     grid-column: 1/-1;
-    margin-bottom: 40px;
-    margin-left: 80px;
+    margin-bottom: 43px;
+    margin-left: 87px;
   }
 
   @media #{$desktop} {
     grid-column: 1/2;
     margin-top: 80px;
+    margin-left: 80px;
   }
 }
 
@@ -119,17 +121,16 @@
     font-size: 20px;
     line-height: 20px;
     margin-bottom: 20px;
-    margin-left: 80px;
+    margin-left: 87px;
   }
 
   @media #{$desktop} {
     grid-column: 1/2;
+    margin-left: 80px;
   }
 }
 
 .intro-index__picture {
-  margin-bottom: 5px;
-
   @media #{$tablet} {
     grid-column: 1/-1;
     grid-row: 3/5;
@@ -173,12 +174,15 @@
     justify-self: start;
     font-size: 20px;
     line-height: 20px;
-    padding: 16px 26px;
-    margin-left: 80px;
-    margin-top: 30px;
+    padding: 17px 26px;
+    margin-top: 29px;
+    margin-right: -6px;
+    margin-left: 82px;
   }
 
   @media #{$desktop} {
     grid-row: auto;
+    margin-top: 31px;
+    margin-left: 80px;
   }
 }

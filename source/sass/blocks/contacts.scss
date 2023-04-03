@@ -20,14 +20,15 @@
 .contacts__panel {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-top: 25px;
+  padding-top: 29px;
   padding-bottom: 25px;
 
   @media #{$tablet} {
-    padding: 60px 41px;
+    padding: 67px 41px 58px;
   }
 
   @media #{$desktop} {
+    column-gap: 80px;
     background-color: $white;
     box-shadow: 0 2px 15px 0 rgba($black, 0.25);
     padding: 60px 75px;
@@ -45,7 +46,7 @@
 
   @media #{$tablet} {
     font-size: 20px;
-    line-height: 21px;
+    line-height: 24px;
   }
 }
 
@@ -59,6 +60,11 @@
   @media #{$tablet} {
     font-size: 16px;
     text-align: right;
+    margin-top: -4px;
+  }
+
+  @media #{$desktop} {
+    text-align: left;
   }
 }
 

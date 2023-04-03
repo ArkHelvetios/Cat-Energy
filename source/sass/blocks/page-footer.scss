@@ -4,35 +4,49 @@
 
 .page-footer__bottom {
   display: grid;
-  gap: 22px;
-  padding-top: 30px;
-  padding-bottom: 20px;
+  padding-top: 45px;
+  padding-bottom: 23px;
 
   @media #{$tablet} {
     grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
     align-items: center;
-    padding-top: 55px;
+    padding-top: 58px;
     padding-bottom: 60px;
+  }
+
+  @media #{$desktop} {
+    padding-top: 62px;
   }
 }
 
 .page-footer__logo {
   justify-self: center;
-  width: 128px;
-  height: 24px;
+  width: 129px;
+  height: 25px;
+  margin-bottom: 31px;
 
   @media #{$tablet} {
     justify-self: start;
+    margin-bottom: 0;
   }
 }
 
 .page-footer__socials {
   border-top: 1px solid $grey-300;
   border-bottom: 1px solid $grey-300;
-  padding: 20px;
+  padding: 21px;
 
   @media #{$tablet} {
     border: none;
+    padding: 0;
+  }
+}
+
+.page-footer__copywright {
+  padding-top: 22px;
+
+  @media #{$tablet} {
     padding: 0;
   }
 }

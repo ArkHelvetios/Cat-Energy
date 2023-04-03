@@ -24,12 +24,12 @@
 }
 
 .example__container {
-  padding-top: 27px;
-  padding-bottom: 25px;
+  padding-top: 30px;
+  padding-bottom: 36px;
 
   @media #{$tablet} {
     padding-top: 43px;
-    padding-bottom: 64px;
+    padding-bottom: 69px;
   }
 
   @media #{$desktop} {
@@ -44,7 +44,7 @@
 
 .example__title {
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 34px;
 
   @media #{$tablet} {
     margin-bottom: 63px;
@@ -62,7 +62,8 @@
   }
 
   @media #{$desktop} {
-    margin-bottom: 0;
+    align-self: flex-end;
+    margin-bottom: 4px;
   }
 }
 
