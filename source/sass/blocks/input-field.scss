@@ -15,8 +15,12 @@
 .input-field__label {
   max-width: 50%;
   color: $grey-500;
-  margin-right: 12px;
+  margin-right: 10px;
   cursor: pointer;
+
+  @media #{$tablet} {
+    margin-right: 20px;
+  }
 }
 
 .input-field__input {

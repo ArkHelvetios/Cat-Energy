@@ -16,37 +16,44 @@
   border: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 
   @media #{$tablet} {
-    margin-bottom: 70px;
+    margin-bottom: 72px;
+  }
+
+  @media #{$desktop} {
+    margin-bottom: 68px;
   }
 
   &--programs {
-    padding: 20px;
+    padding: 22px 20px 18px;
     margin-right: -20px;
     margin-left: -20px;
     border: 1px solid $grey-200;
+    margin-bottom: 26px;
 
     @media #{$tablet} {
-      margin-right: 0;
-      margin-left: 0;
-      padding: 25px 28px;
+      padding: 25px 28px 23px;
+      margin: 0 0 74px;
+    }
+
+    @media #{$desktop} {
+      margin-bottom: 68px;
     }
   }
 }
 
 .form-consult__legend {
   margin-bottom: 35px;
-  padding: 0;
 
   @media #{$tablet} {
-    margin-bottom: 55px;
+    margin-bottom: 77px;
   }
 }
 
 .form-consult__field {
-  margin-bottom: 14px;
+  margin-bottom: 13px;
 
   @media #{$tablet} {
     margin-bottom: 20px;
@@ -71,21 +78,22 @@
 
 .form-consult__extra-list {
   display: grid;
-  gap: 13px;
 
   @media #{$tablet} {
     grid-template-columns: 1fr 1fr;
-    gap: 32px 80px;
+    gap: 20px;
   }
 
   @media #{$desktop} {
     grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
   }
 }
 
 .form-consult__submit-container {
   display: grid;
-  gap: 20px;
+  row-gap: 21px;
+  padding-top: 10px;
 
   @media #{$tablet} {
     grid-template-columns: 1fr 1fr;
