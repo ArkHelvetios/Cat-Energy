@@ -1,18 +1,18 @@
 .extra-goods__title {
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 34px;
 
   @media #{$tablet} {
-    margin-bottom: 80px;
+    margin-bottom: 81px;
   }
 }
 
 .extra-goods__inner {
   display: grid;
-  row-gap: 40px;
+  row-gap: 39px;
 
   @media #{$tablet} {
-    row-gap: 70px;
+    row-gap: 68px;
   }
 
   @media #{$desktop} {
@@ -30,29 +30,33 @@
 .extra-goods__item {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 15px;
   padding-top: 13px;
-  padding-bottom: 19px;
+  padding-bottom: 17px;
   border-top: 1px solid $grey-300;
 
   &:last-child {
     border-bottom: 1px solid $grey-300;
   }
 
+  & th,
+  & td {
+    padding: 0;
+  }
+
   @media #{$tablet} {
-    grid-template-columns: 50% 1fr 90px;
-    gap: 25px 20px;
+    grid-template-columns: 50% 1fr 72px;
+    gap: 23px 20px;
     border-left: 1px solid $grey-300;
     border-right: 1px solid $grey-300;
-    padding: 26px 38px 28px;
+    padding: 26px 38px 27px;
   }
 
   @media #{$desktop} {
-    grid-template-columns: 1fr 225px 70px 245px;
+    grid-template-columns: 1fr 225px 62px 245px;
     align-items: center;
     border-left: none;
     border-right: none;
-    padding: 15px 0 17px;
+    padding: 15px 0 16px;
   }
 }
 
@@ -63,11 +67,13 @@
   text-transform: uppercase;
   text-align: start;
   grid-column: 1/-1;
+  margin-bottom: 13px;
 
   @media #{$tablet} {
     grid-column: 1/2;
     font-size: 20px;
     line-height: 20px;
+    margin-bottom: 0;
   }
 
   @media #{$desktop} {
@@ -80,10 +86,17 @@
   font-family: $font-family-secondary;
   font-size: 14px;
   line-height: 14px;
+  margin-bottom: 15px;
 
   @media #{$tablet} {
     font-size: 16px;
     line-height: 20px;
+    margin-top: 2px;
+    margin-bottom: 0;
+  }
+
+  @media #{$desktop} {
+    margin-top: 7px;
   }
 }
 
@@ -131,8 +144,7 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
-  padding: 60px;
-  padding-bottom: 40px;
+  padding: 65px 50px 43px;
   overflow-wrap: anywhere;
 
   @media #{$retina} {
@@ -151,7 +163,7 @@
       url("../../img/extra-goods/gift-background-tablet.avif") type("image/avif"),
       url("../../img/extra-goods/gift-background-tablet.webp") type("image/webp")
     );
-    padding: 64px 124px 70px 84px;
+    padding: 59px 120px 68px 90px;
 
     @media #{$retina} {
       background-image: url("../../img/extra-goods/gift-background-tablet@2x.jpg");
@@ -164,19 +176,22 @@
 
   @media #{$desktop} {
     background-position: 50% 100%;
-    padding: 40px;
-    padding-top: 56px;
+    padding: 63px 40px 42px;
   }
 }
 
 .extra-goods__cta-icon {
   min-width: 56px;
   height: 60px;
+
+  @media #{$tablet-only} {
+    min-width: 57px;
+    height: 62px;
+  }
 }
 
 .extra-goods__cta-text {
   font-family: $font-family-secondary;
-  width: 161px;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -184,5 +199,7 @@
 
   @media #{$tablet-only} {
     text-align: start;
+    max-width: 165px;
+    margin-top: 12px;
   }
 }

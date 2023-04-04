@@ -8,13 +8,13 @@
 
   @media #{$tablet} {
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    gap: 70px 60px;
     margin: 0;
   }
 
   @media #{$desktop} {
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 80px;
+    gap: 73px 80px;
   }
 }
 
@@ -26,6 +26,10 @@
 
 .catalog__picture {
   @media #{$tablet} {
-    margin-top: -70px;
+    margin-top: -73px;
+  }
+
+  @media #{$desktop} {
+    margin-top: -83px;
   }
 }

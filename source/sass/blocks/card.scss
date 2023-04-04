@@ -7,8 +7,7 @@
     "btn btn";
   row-gap: 13px;
   border-top: 1px solid $grey-200;
-  padding: 20px;
-  padding-bottom: 25px;
+  padding: 18px 20px 24px;
   overflow-wrap: anywhere;
 
   @media #{$tablet} {
@@ -26,6 +25,7 @@
     row-gap: 0;
     text-align: center;
     border-bottom: 1px solid $grey-200;
+    padding-top: 25px;
 
     &::before {
       content: "";
@@ -35,32 +35,46 @@
       background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' stroke='%23D3D3D3' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='15' x2='15' y2='30' stroke-width='2'/%3E%3Cline x1='30' y1='15' y2='15' stroke-width='2'/%3E%3C/svg%3E%0A");
       background-repeat: no-repeat;
       background-position: 50% 50%;
-      margin-bottom: 23px;
+      margin-bottom: 22px;
     }
 
     @media #{$tablet} {
       background-color: $white;
       border: 1px solid $grey-200;
-      padding-top: 50px;
+      padding-top: 52px;
 
       &::before {
         width: 60px;
         height: 60px;
         background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' stroke='%23D3D3D3' viewBox='0 0 60 60' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='30' x2='30' y2='60' stroke-width='2'/%3E%3Cline x1='60' y1='30' y2='30' stroke-width='2'/%3E%3C/svg%3E%0A");
-        margin-bottom: 50px;
+        margin-bottom: 45px;
       }
+    }
+
+    @media #{$desktop} {
+      border-width: 3px;
+      padding: 50px 35px 38px;
     }
 
     & .card__title {
       margin-bottom: 8px;
 
       @media #{$tablet} {
-        margin-bottom: 23px;
+        margin-bottom: 21px;
       }
     }
 
     & .card__description {
-      margin-bottom: 21px;
+      align-self: center;
+      margin-bottom: 20px;
+
+      @media #{$tablet} {
+        width: 75%;
+      }
+
+      @media #{$desktop} {
+        width: auto;
+      }
     }
   }
 }
@@ -72,12 +86,19 @@
   font-weight: inherit;
   text-transform: uppercase;
   margin: 0;
+  padding-top: 2px;
 
   @media #{$tablet} {
+    width: 65%;
+    align-self: center;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
+  }
+
+  @media #{$desktop} {
+    width: auto;
   }
 }
 
@@ -101,7 +122,11 @@
   @media #{$tablet} {
     order: -1;
     align-self: center;
-    margin-bottom: 34px;
+    margin-bottom: 26px;
+  }
+
+  @media #{$desktop} {
+    margin-bottom: 37px;
   }
 }
 
@@ -113,21 +138,25 @@
 
   @media #{$tablet} {
     width: 168px;
-    height: 200px;
+    height: 207px;
   }
 }
 
 .card__info {
   grid-area: info;
   display: grid;
+  align-self: end;
   grid-template-columns: 1fr 1fr;
   font-family: $font-family-secondary;
   font-size: 12px;
   line-height: 16px;
+  padding-bottom: 10px;
 
   @media #{$tablet} {
+    align-self: auto;
     font-size: 16px;
-    margin-bottom: 30px;
+    padding: 0;
+    margin-bottom: 33px;
   }
 }
 
@@ -135,7 +164,7 @@
 .card__parameter-value {
   @media #{$tablet} {
     padding-top: 7px;
-    padding-bottom: 9px;
+    padding-bottom: 8px;
     border-bottom: 1px solid $grey-300;
   }
 }

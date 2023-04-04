@@ -11,10 +11,16 @@
 }
 
 .page-main__header {
-  margin-bottom: 40px;
+  padding-top: 26px;
+  margin-bottom: 41px;
 
   @media #{$tablet} {
+    padding-top: 63px;
     margin-bottom: 65px;
+  }
+
+  @media #{$desktop} {
+    padding-top: 74px;
   }
 }
 
@@ -55,14 +61,15 @@
 }
 
 .page-main__catalog {
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 
   @media #{$tablet} {
-    margin-bottom: 68px;
+    padding-top: 30px;
+    margin-bottom: 65px;
   }
 
   @media #{$desktop} {
-    margin-bottom: 75px;
+    margin-bottom: 73px;
   }
 }
 

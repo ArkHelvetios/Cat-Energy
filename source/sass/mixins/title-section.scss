@@ -1,7 +1,7 @@
 .title-section {
   display: inline-block;
   position: relative;
-  max-width: 70%;
+  max-width: 85%;
   font-size: 24px;
   line-height: 26px;
   font-weight: inherit;
@@ -33,20 +33,27 @@
     max-width: none;
     font-size: 36px;
     line-height: 36px;
+    padding: 0 37px;
 
     &::before {
       left: calc(var(--container-padding) * -1);
     }
 
     &::after {
-      left: -40px;
-      right: -40px;
+      left: 0;
+      right: 0;
     }
   }
 
   @media #{$desktop} {
+    padding: 0;
     &::before {
       left: calc((50vw - var(--container-width-desktop) / 2) * -1)
+    }
+
+    &::after {
+      left: -40px;
+      right: -40px;
     }
   }
 }
