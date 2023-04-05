@@ -136,10 +136,10 @@
   width: 100%;
   color: $white;
   background-color: $green-basic;
-  background-image: url("../../img/extra-goods/gift-background.png");
+  background-image: url("../img/extra-goods/gift-background.png");
   background-image: image-set(
-    url("../../img/extra-goods/gift-background.avif") type("image/avif"),
-    url("../../img/extra-goods/gift-background.webp") type("image/webp")
+    url("../img/extra-goods/gift-background.avif") type("image/avif"),
+    url("../img/extra-goods/gift-background.webp") type("image/webp")
     );
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -148,28 +148,28 @@
   overflow-wrap: anywhere;
 
   @media #{$retina} {
-    background-image: url("../../img/extra-goods/gift-background@2x.jpg");
+    background-image: url("../img/extra-goods/gift-background@2x.jpg");
     background-image: image-set(
-      url("../../img/extra-goods/gift-background@2x.avif") type("image/avif"),
-      url("../../img/extra-goods/gift-background@2x.webp") type("image/webp")
+      url("../img/extra-goods/gift-background@2x.avif") type("image/avif"),
+      url("../img/extra-goods/gift-background@2x.webp") type("image/webp")
     );
   }
 
   @media #{$tablet-only} {
     flex-direction: row;
     min-height: 200px;
-    background-image: url("../../img/extra-goods/gift-background-tablet.png");
+    background-image: url("../img/extra-goods/gift-background-tablet.png");
     background-image: image-set(
-      url("../../img/extra-goods/gift-background-tablet.avif") type("image/avif"),
-      url("../../img/extra-goods/gift-background-tablet.webp") type("image/webp")
+      url("../img/extra-goods/gift-background-tablet.avif") type("image/avif"),
+      url("../img/extra-goods/gift-background-tablet.webp") type("image/webp")
     );
     padding: 59px 120px 68px 90px;
 
     @media #{$retina} {
-      background-image: url("../../img/extra-goods/gift-background-tablet@2x.jpg");
+      background-image: url("../img/extra-goods/gift-background-tablet@2x.jpg");
       background-image: image-set(
-        url("../../img/extra-goods/gift-background-tablet@2x.avif") type("image/avif"),
-        url("../../img/extra-goods/gift-background-tablet@2x.webp") type("image/webp")
+        url("../img/extra-goods/gift-background-tablet@2x.avif") type("image/avif"),
+        url("../img/extra-goods/gift-background-tablet@2x.webp") type("image/webp")
       );
     }
   }

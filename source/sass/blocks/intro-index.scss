@@ -19,20 +19,20 @@
 
   &::before {
     background-color: $grey-500;
-    background-image: url("../../img/intro/index-background-mobile.jpg");
+    background-image: url("../img/intro/index-background-mobile.jpg");
     background-image: image-set(
-      url("../../img/intro/index-background-mobile.avif") type("image/avif"),
-      url("../../img/intro/index-background-mobile.webp") type("image/webp")
+      url("../img/intro/index-background-mobile.avif") type("image/avif"),
+      url("../img/intro/index-background-mobile.webp") type("image/webp")
     );
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 
     @media #{$retina} {
-      background-image: url("../../img/intro/index-background-mobile@2x.jpg");
+      background-image: url("../img/intro/index-background-mobile@2x.jpg");
       background-image: image-set(
-        url("../../img/intro/index-background-mobile@2x.avif") type("image/avif"),
-        url("../../img/intro/index-background-mobile@2x.webp") type("image/webp")
+        url("../img/intro/index-background-mobile@2x.avif") type("image/avif"),
+        url("../img/intro/index-background-mobile@2x.webp") type("image/webp")
       );
     }
   }
@@ -68,19 +68,19 @@
       right: 0;
     }
     &::before {
-      background-image: url("../../img/intro/index-background-desktop.jpg");
+      background-image: url("../img/intro/index-background-desktop.jpg");
       background-image: image-set(
-        url("../../img/intro/index-background-desktop.avif") type("image/avif"),
-        url("../../img/intro/index-background-desktop.webp") type("image/webp")
+        url("../img/intro/index-background-desktop.avif") type("image/avif"),
+        url("../img/intro/index-background-desktop.webp") type("image/webp")
       );
       background-size: cover;
       background-position: 0 0;
 
       @media #{$retina} {
-        background-image: url("../../img/intro/index-background-desktop@2x.jpg");
+        background-image: url("../img/intro/index-background-desktop@2x.jpg");
         background-image: image-set(
-          url("../../img/intro/index-background-desktop@2x.avif") type("image/avif"),
-          url("../../img/intro/index-background-desktop@2x.webp") type("image/webp")
+          url("../img/intro/index-background-desktop@2x.avif") type("image/avif"),
+          url("../img/intro/index-background-desktop@2x.webp") type("image/webp")
         );
       }
     }

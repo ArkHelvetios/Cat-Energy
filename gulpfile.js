@@ -10,6 +10,7 @@ const imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp');
 const avif = require('gulp-avif');
 const svgstore = require('gulp-svgstore');
+const ghPages = require('gulp-gh-pages');
 const csso = require('postcss-csso');
 const autoprefixer = require('autoprefixer');
 const sync = require('browser-sync').create();
@@ -136,7 +137,30 @@ const watcher = () => {
   gulp.watch('source/**/*.html', gulp.series(htmlMinify, reload));
 };
 
+// Deploy
+
+const deploy = () => {
+  return gulp.src('build/**/*')
+    .pipe(ghPages())
+}
+
 // Exports
+
+exports.default = gulp.series(
+  buildClean,
+  sourceCopy,
+  imagesCopy,
+  gulp.parallel(
+    stylesBuild,
+    htmlMinify,
+    jsMinify,
+    spriteBuild,
+  ),
+  gulp.series(
+    server,
+    watcher
+  )
+);
 
 exports.build = gulp.series(
   buildClean,
@@ -150,27 +174,11 @@ exports.build = gulp.series(
     imagesWebp,
     imagesAvif
   )
-)
-
-exports.default = gulp.series(
-  buildClean,
-  sourceCopy,
-  imagesCopy,
-  gulp.parallel(
-    stylesBuild,
-    htmlMinify,
-    jsMinify,
-    spriteBuild,
-    imagesWebp,
-    imagesAvif
-  ),
-  gulp.series(
-    server,
-    watcher
-  )
-)
+);
 
 exports.live = gulp.series(
   server,
   watcher
-)
+);
+
+ exports.deploy = deploy;

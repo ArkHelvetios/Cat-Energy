@@ -17,6 +17,7 @@
     "del": "^6.1.1",
     "gulp": "^4.0.2",
     "gulp-avif": "^1.1.1",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^7.1.0",
     "gulp-plumber": "^1.2.1",
@@ -54,7 +55,8 @@
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
     "live": "gulp live",
-    "start": "gulp"
+    "start": "gulp",
+    "deploy": "gulp deploy"
   },
   "browserslist": [
     "last 2 versions",
