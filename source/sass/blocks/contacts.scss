@@ -86,7 +86,7 @@
   height: 360px;
   border: none;
   background-color: $grey-500;
-  background-image: url("../img/map/map-mobile.png");
+  background-image: url("../img/map/map-mobile.jpg");
   background-image: image-set(
     url("../img/map/map-mobile.avif") type("image/avif"),
     url("../img/map/map-mobile.webp") type("image/webp")
@@ -96,7 +96,7 @@
   background-size: cover;
 
   @media #{$retina} {
-    background-image: url("../img/map/map-mobile@2x.png");
+    background-image: url("../img/map/map-mobile@2x.jpg");
     background-image: image-set(
       url("../img/map/map-mobile@2x.avif") type("image/avif"),
       url("../img/map/map-mobile@2x.webp") type("image/webp")
@@ -105,14 +105,14 @@
 
   @media #{$tablet} {
     min-height: 400px;
-    background-image: url("../img/map/map-tablet.png");
+    background-image: url("../img/map/map-tablet.jpg");
     background-image: image-set(
       url("../img/map/map-tablet.avif") type("image/avif"),
       url("../img/map/map-tablet.webp") type("image/webp")
     );
 
     @media #{$retina} {
-      background-image: url("../img/map/map-tablet@2x.png");
+      background-image: url("../img/map/map-tablet@2x.jpg");
       background-image: image-set(
         url("../img/map/map-tablet@2x.avif") type("image/avif"),
         url("../img/map/map-tablet@2x.webp") type("image/webp")
@@ -123,7 +123,7 @@
   @media #{$desktop} {
     grid-row: 1/-1;
     grid-column: 1/-1;
-    background-image: url("../img/map/map-desktop.png");
+    background-image: url("../img/map/map-desktop.jpg");
     background-image: image-set(
       url("../img/map/map-desktop.avif") type("image/avif"),
       url("../img/map/map-desktop.webp") type("image/webp")
@@ -133,7 +133,7 @@
     background-size: cover;
 
     @media #{$retina} {
-      background-image: url("../img/map/map-desktop@2x.png");
+      background-image: url("../img/map/map-desktop@2x.jpg");
       background-image: image-set(
         url("../img/map/map-desktop@2x.avif") type("image/avif"),
         url("../img/map/map-desktop@2x.webp") type("image/webp")
@@ -143,6 +143,7 @@
 }
 
 .contacts__map-pin {
+  position: relative;
   width: 113px;
   height: 106px;
   background-image: url("../img/map/map-pin.png");
@@ -154,7 +155,7 @@
   background-position: center bottom;
   background-size: contain;
   margin-right: -10px;
-  z-index: 1;
+  transform: translate(-50%,calc(-50% - 40px));
 
   @media #{$retina} {
     background-image: url("../img/map/map-pin@2x.png");

@@ -7,13 +7,13 @@ if (desktopMediaQuery.matches) {
   ymaps3.ready.then(() => {
     const map = new ymaps3.YMap(mapWrapper, {
       location: {
-        center: [30.318006, 59.937103],
+        center: [30.318006, 59.938803],
         zoom: 16
       }
     })
 
     const mapPin = document.createElement('div');
-    mapPin.classList.add('contacts__map-pin');
+    mapPin.className = 'contacts__map-pin';
 
     const mapMarker = new ymaps3.YMapMarker({
       coordinates: [30.323037, 59.938631],
