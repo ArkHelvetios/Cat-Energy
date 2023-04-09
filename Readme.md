@@ -7,28 +7,27 @@
 * Course: [Responsive layouts and automation](https://htmlacademy.ru/intensive/adaptive).
 * School: [HTML Academy](https://htmlacademy.ru), @htmlacademy
 
-## :alarm_clock: TL;DR
+## :information_source: Meta Information
 
-<div style="display: flex; column-gap: 10px; text-align: center;">
-  <div style="flex: 1">
-    <h3>Studied and Used Technologies</h3>
-    <img width="70" height="70" alt="HTML icon" src="/../../../../github/docs/blob/main/assets/img/tech-icon-html.png">
-    <img width="70" height="70" alt="CSS icon" src="/../../../../github/docs/blob/main/assets/img/tech-icon-css.png">
-    <img width="70" height="70" alt="JS icon" src="/../../../../github/docs/blob/main/assets/img/tech-icon-js.png">
-    <img width="70" height="70" alt="BEM methodology icon" src="/../../../../github/docs/blob/main/assets/img/tech-icon-bem.png">
-    <img width="70" height="70" alt="Sass icon" src="/../../../../github/docs/blob/main/assets/img/tech-icon-sass.png">
-    <img width="70" height="70" alt="Gulp icon" src="/../../../../github/docs/blob/main/assets/img/tech-icon-gulp.png">
-  </div>
-  <div style="flex: 1">
-    <h3>Main Approaches</h3>
-    Mobile First <br>
-    <img width="300" height="70" alt="" src="/../../../../github/docs/blob/main/assets/img/scheme-mobile-first.png">
-    <br>
-    Progressive Enhancement<br>
-    <img width="300" height="30" alt="" src="/../../../../github/docs/blob/main/assets/img/scheme-progressive enhancement.png">
-  </div>
+### Studied and Used Technologies
+![HTML icon](https://github.com/ArkHelvetios/ArkHelvetios/blob/main/assets/img/tech-icon-html.png)
+![CSS icon](https://github.com/ArkHelvetios/ArkHelvetios/blob/main/assets/img/tech-icon-css.png)
+![JavaScript icon](https://github.com/ArkHelvetios/ArkHelvetios/blob/main/assets/img/tech-icon-js.png)
+![BEM metodology icon](https://github.com/ArkHelvetios/ArkHelvetios/blob/main/assets/img/tech-icon-bem.png)
+![Sass icon](https://github.com/ArkHelvetios/ArkHelvetios/blob/main/assets/img/tech-icon-sass.png)
+![Gulp icon](https://github.com/ArkHelvetios/ArkHelvetios/blob/main/assets/img/tech-icon-gulp.png)
 
-</div>
+### Main Approaches 
+| Mobile First | Progressive Enhancement | 
+| -- | -- |
+| ![Mobile First](https://github.com/ArkHelvetios/ArkHelvetios/blob/main/assets/img/scheme-mobile-first.png) | ![Progressive Enhancement](https://github.com/ArkHelvetios/ArkHelvetios/blob/main/assets/img/scheme-progressive%20enhancement.png) |
+
+### Results
+| PageSpeed Insight [mobile](https://pagespeed.web.dev/analysis/https-arkhelvetios-github-io-Cat-Energy/39t6h5zgcs?form_factor=mobile) | PageSpeed Insight [desktop](https://pagespeed.web.dev/analysis/https-arkhelvetios-github-io-Cat-Energy/39t6h5zgcs?form_factor=desktop) |
+| -- | -- | 
+| ![PageSpeed Insight mobile](https://user-images.githubusercontent.com/57595497/230753128-ccf9477a-c886-434d-a919-0750b8ed936b.png) | ![PageSpeed Insight desktop](https://user-images.githubusercontent.com/57595497/230753078-32e390bb-14f1-4b20-9c36-d6fa4aa15e18.png) |
+<br>
+
 
 ## :memo: Educational goals (by course and *mine*)
 
