@@ -10,22 +10,61 @@
 ## :information_source: Meta Information
 
 ### Studied and Used Technologies
-![HTML icon](https://github.com/ArkHelvetios/ArkHelvetios/blob/main/assets/img/tech-icon-html.png)
-![CSS icon](https://github.com/ArkHelvetios/ArkHelvetios/blob/main/assets/img/tech-icon-css.png)
-![JavaScript icon](https://github.com/ArkHelvetios/ArkHelvetios/blob/main/assets/img/tech-icon-js.png)
-![BEM metodology icon](https://github.com/ArkHelvetios/ArkHelvetios/blob/main/assets/img/tech-icon-bem.png)
-![Sass icon](https://github.com/ArkHelvetios/ArkHelvetios/blob/main/assets/img/tech-icon-sass.png)
-![Gulp icon](https://github.com/ArkHelvetios/ArkHelvetios/blob/main/assets/img/tech-icon-gulp.png)
-
+![HTML icon](https://raw.githubusercontent.com/ArkHelvetios/ArkHelvetios/main/assets/img/tech-icon-html.png)
+![CSS icon](https://raw.githubusercontent.com/ArkHelvetios/ArkHelvetios/main/assets/img/tech-icon-css.png)
+![JavaScript icon](https://raw.githubusercontent.com/ArkHelvetios/ArkHelvetios/main/assets/img/tech-icon-js.png)
+![BEM metodology icon](https://raw.githubusercontent.com/ArkHelvetios/ArkHelvetios/main/assets/img/tech-icon-bem.png)
+![Sass icon](https://raw.githubusercontent.com/ArkHelvetios/ArkHelvetios/main/assets/img/tech-icon-sass.png)
+![Gulp icon](https://raw.githubusercontent.com/ArkHelvetios/ArkHelvetios/main/assets/img/tech-icon-gulp.png)
 ### Main Approaches 
-| Mobile First | Progressive Enhancement | 
-| -- | -- |
-| ![Mobile First](https://github.com/ArkHelvetios/ArkHelvetios/blob/main/assets/img/scheme-mobile-first.png) | ![Progressive Enhancement](https://github.com/ArkHelvetios/ArkHelvetios/blob/main/assets/img/scheme-progressive%20enhancement.png) |
+
+<table>
+  <tr>
+    <th>Mobile First</th>
+    <th>Progressive Enhancement</th>
+  </tr>
+  <tr>
+    <td>
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ArkHelvetios/ArkHelvetios/main/assets/img/scheme-mobile-first-dth.png">
+        <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ArkHelvetios/ArkHelvetios/main/assets/img/scheme-mobile-first-lth.png">
+        <img width="360" heigh="85" alt="Mobile First Scheme" src="https://raw.githubusercontent.com/ArkHelvetios/ArkHelvetios/main/assets/img/scheme-mobile-first-lth.png">
+      </picture>
+    </td>
+    <td>
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ArkHelvetios/ArkHelvetios/main/assets/img/scheme-progressive-enhancement-dth.png">
+        <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ArkHelvetios/ArkHelvetios/main/assets/img/scheme-progressive-enhancement-lth.png">
+        <img width="360" heigh="85" alt="Progressive Enhancement Scheme" src="https://raw.githubusercontent.com/ArkHelvetios/ArkHelvetios/main/assets/img/scheme-progressive-enhancement-lth.png">
+      </picture>
+    </td>
+  </tr>
+</table>
 
 ### Results
-| PageSpeed Insight [mobile](https://pagespeed.web.dev/analysis/https-arkhelvetios-github-io-Cat-Energy/39t6h5zgcs?form_factor=mobile) | PageSpeed Insight [desktop](https://pagespeed.web.dev/analysis/https-arkhelvetios-github-io-Cat-Energy/39t6h5zgcs?form_factor=desktop) |
-| -- | -- | 
-| ![PageSpeed Insight mobile](https://user-images.githubusercontent.com/57595497/230753128-ccf9477a-c886-434d-a919-0750b8ed936b.png) | ![PageSpeed Insight desktop](https://user-images.githubusercontent.com/57595497/230753078-32e390bb-14f1-4b20-9c36-d6fa4aa15e18.png) |
+
+<table>
+  <tr>
+    <th>PageSpeed Insight <a href="https://pagespeed.web.dev/analysis/https-arkhelvetios-github-io-Cat-Energy/39t6h5zgcs?form_factor=mobile">mobile</a></th>
+    <th>PageSpeed Insight <a href="https://pagespeed.web.dev/analysis/https-arkhelvetios-github-io-Cat-Energy/39t6h5zgcs?form_factor=desktop">desktop</a></th>
+  </tr>
+  <tr>
+    <td>
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ArkHelvetios/ArkHelvetios/main/assets/repo-cases/cat-energy/PSI-mobile-dth.png">
+        <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ArkHelvetios/ArkHelvetios/main/assets/repo-cases/cat-energy/PSI-mobile-lth.png">
+        <img width="360" heigh="85" alt="PageSpeed Insight mobile results" src="https://raw.githubusercontent.com/ArkHelvetios/ArkHelvetios/main/assets/repo-cases/cat-energy/PSI-mobile-lth.png">
+      </picture>
+    </td>
+    <td>
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ArkHelvetios/ArkHelvetios/main/assets/repo-cases/cat-energy/PSI-desktop-dth.png">
+        <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ArkHelvetios/ArkHelvetios/main/assets/repo-cases/cat-energy/PSI-desktop-lth.png">
+        <img width="360" heigh="85" alt="PageSpeed Insight desktop results" src="https://raw.githubusercontent.com/ArkHelvetios/ArkHelvetios/main/assets/repo-cases/cat-energy/PSI-desktop-lth.png">
+      </picture>
+    </td>
+  </tr>
+</table>
 <br>
 
 
@@ -45,6 +84,24 @@
 5. Creating responsive layouts using Sass by [`Mobile First`](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Responsive/Mobile_first) concept.
 
     > * Made a working [comparison slider](https://github.com/ArkHelvetios/Cat-Energy/blob/main/source/js/comparison.js) that has different functionality depending on the width of the viewport. Mobile - simple slider, tablet+ - draggable comparison slider.
+        <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td>
+              <picture>
+                <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ArkHelvetios/ArkHelvetios/main/assets/repo-cases/cat-energy/comparison-mobile-dth.gif">
+                <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ArkHelvetios/ArkHelvetios/main/assets/repo-cases/cat-energy/comparison-mobile-lth.gif">
+                <img height="200" alt="mobile comparison block" src="https://raw.githubusercontent.com/ArkHelvetios/ArkHelvetios/main/assets/repo-cases/cat-energy/comparison-mobile-lth.gif">
+              </picture>
+            </td>
+            <td>
+              <picture>
+                <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ArkHelvetios/ArkHelvetios/main/assets/repo-cases/cat-energy/comparison-desktop-dth.gif">
+                <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ArkHelvetios/ArkHelvetios/main/assets/repo-cases/cat-energy/comparison-desktop-lth.gif">
+                <img height="200" alt="desktop comparison block" src="https://raw.githubusercontent.com/ArkHelvetios/ArkHelvetios/main/assets/repo-cases/cat-energy/comparison-desktop-lth.gif">
+              </picture>
+            </td>
+          </tr>
+        </table>
     > * Made a working custom [interactive map](https://github.com/ArkHelvetios/Cat-Energy/blob/main/source/js/map.js) by using [Yandex Maps API](https://yandex.com/dev/maps/).
 
 6. In-depth learn about High-DPI/Retina displays and use adaptive content by `viewport width` and `dppx`. Also work with [`WebP`](https://developers.google.com/speed/webp) and [`AVIF`](https://aomediacodec.github.io/av1-avif/v1.1.0.html) as a modern and lighter image formats.
